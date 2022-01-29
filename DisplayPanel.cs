@@ -4,4 +4,14 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Data;
 using System.Text;
-using System.Window
+using System.Windows.Forms;
+
+namespace SwarmNLP
+{
+    public partial class DisplayPanel : UserControl
+    {
+        public DisplayPanel()
+        {
+            InitializeComponent();
+
+            SetStyle(ControlStyle
