@@ -14,4 +14,10 @@ namespace SwarmNLP
         {
             InitializeComponent();
 
-            SetStyle(ControlStyle
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+
+            UpdateStyles();
+        }
+    }
+}
