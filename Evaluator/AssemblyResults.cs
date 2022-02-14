@@ -12,4 +12,7 @@ namespace Evaluator
 		Assembly assembly;
 		CompilerErrorCollection warnings;
 
-		/// <su
+		/// <summary>
+		/// Gets the <see cref="Type"/> object that represents the specified type from the compiled assembly. <seealso cref="Assembly.GetType"/>
+		/// </summary>
+		/// <param name="type
