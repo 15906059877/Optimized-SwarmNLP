@@ -15,4 +15,8 @@ namespace Evaluator
 		/// <summary>
 		/// Gets the <see cref="Type"/> object that represents the specified type from the compiled assembly. <seealso cref="Assembly.GetType"/>
 		/// </summary>
-		/// <param name="type
+		/// <param name="typeName">
+		/// The full name of the type.
+		/// </param>
+		/// <param name="throwOnError">
+		/// true to throw an exception if the type is not found; otherwise, a null reference (Noth
