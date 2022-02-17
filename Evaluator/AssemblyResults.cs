@@ -30,4 +30,15 @@ namespace Evaluator
 		}
 
 		/// <summary>
-		/// The fi
+		/// The final <see cref="Assembly"/> produced by the compiler.
+		/// </summary>
+		public Assembly Assembly
+		{
+			get
+			{
+				return assembly;
+			}
+		}
+
+		/// <summary>
+		/// The collection of warn
