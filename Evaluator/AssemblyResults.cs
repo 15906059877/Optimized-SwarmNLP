@@ -70,3 +70,8 @@ namespace Evaluator
 			}
 		}
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="AssemblyResults"/> class.
+		/// </summary>
+		/// <param name="fullResults">
+		/// The results of the programmat
