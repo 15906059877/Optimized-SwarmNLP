@@ -57,4 +57,16 @@ namespace Evaluator
 		/// <param name="fullResults">
 		/// The results of the programmatically-accessed compilation.
 		/// </param>
-		protected internal AssemblyResults(CompilerResults fullResul
+		protected internal AssemblyResults(CompilerResults fullResults)
+		{
+			if(fullResults.Errors.HasErrors)
+			{
+				throw new CompilationException(fullResults.Errors);
+			}
+			else
+			{
+				assembly = fullResults.CompiledAssembly;
+				warnings = fullResults.Errors;
+			}
+		}
+
