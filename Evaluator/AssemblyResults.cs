@@ -74,4 +74,9 @@ namespace Evaluator
 		/// Initializes a new instance of the <see cref="AssemblyResults"/> class.
 		/// </summary>
 		/// <param name="fullResults">
-		/// The results of the programmat
+		/// The results of the programmatically-accessed compilation.
+		/// </param>
+		/// <param name="resultSource">
+		/// The source that the compiler attempted to compile.
+		/// </param>
+		protected internal AssemblyResults(CompilerR
