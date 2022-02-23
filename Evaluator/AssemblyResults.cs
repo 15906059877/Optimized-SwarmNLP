@@ -87,4 +87,9 @@ namespace Evaluator
 			}
 			else
 			{
-				assembly = fullResults.Compi
+				assembly = fullResults.CompiledAssembly;
+				warnings = fullResults.Errors;
+			}
+		}
+	}
+}
