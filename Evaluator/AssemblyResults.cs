@@ -79,4 +79,12 @@ namespace Evaluator
 		/// <param name="resultSource">
 		/// The source that the compiler attempted to compile.
 		/// </param>
-		protected internal AssemblyResults(CompilerR
+		protected internal AssemblyResults(CompilerResults fullResults, string resultSource)
+		{
+			if(fullResults.Errors.HasErrors)
+			{
+				throw new CompilationException(fullResults.Errors, resultSource);
+			}
+			else
+			{
+				assembly = fullResults.Compi
