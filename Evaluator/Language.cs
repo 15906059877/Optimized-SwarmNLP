@@ -9,4 +9,7 @@ namespace Evaluator
 	public abstract class Language
 	{
 		/// <summary>
-		/// Generates a st
+		/// Generates a statement to allow treatment of classes within an assembly/namespace as if they were local
+		/// </summary>
+		/// <param name="assemblyName">
+		/// The name of the assembly to be treated as
