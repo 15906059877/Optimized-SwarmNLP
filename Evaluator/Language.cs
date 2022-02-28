@@ -17,4 +17,11 @@ namespace Evaluator
 		/// <returns>
 		/// A statement that will allow treatment of classes within an assembly/namespace as if they were local
 		/// </returns>
-		public abstract string useStatement(
+		public abstract string useStatement(string assemblyName);
+
+		/// <summary>
+		/// Generates a statement to begin a namespace
+		/// </summary>
+		/// <param name="namespaceName">
+		/// The name of the namespace
+		///
