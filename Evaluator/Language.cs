@@ -30,4 +30,10 @@ namespace Evaluator
 		/// </returns>
 		public abstract string beginNamespace(string namespaceName);
 		/// <summary>
-		/// Generates a
+		/// Generates a statement to end a namespace
+		/// </summary>
+		/// <param name="namespaceName">
+		/// The name of the namespace
+		/// </param>
+		/// <returns>
+		/// A statement to end the names
