@@ -24,4 +24,10 @@ namespace Evaluator
 		/// </summary>
 		/// <param name="namespaceName">
 		/// The name of the namespace
-		///
+		/// </param>
+		/// <returns>
+		/// A statement to begin the namespace
+		/// </returns>
+		public abstract string beginNamespace(string namespaceName);
+		/// <summary>
+		/// Generates a
