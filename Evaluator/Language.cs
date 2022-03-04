@@ -36,4 +36,12 @@ namespace Evaluator
 		/// The name of the namespace
 		/// </param>
 		/// <returns>
-		/// A statement to end the names
+		/// A statement to end the namespace
+		/// </returns>
+		public abstract string endNamespace(string namespaceName);
+
+		/// <summary>
+		/// Generates a statement to begin a type
+		/// </summary>
+		/// <param name="typeName">
+		/// 
