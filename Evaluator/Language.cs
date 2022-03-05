@@ -57,4 +57,12 @@ namespace Evaluator
 		/// The name of the type
 		/// </param>
 		/// <returns>
-		/// A statement to end the typ
+		/// A statement to end the type
+		/// </returns>
+		public abstract string endType(string typeName);
+	}
+
+	/// <summary>
+	/// A basic specification of the syntax of C#
+	/// </summary>
+	public class CSharpLanguage : Lang
