@@ -50,4 +50,11 @@ namespace Evaluator
 		/// A statement to begin the type
 		/// </returns>
 		public abstract string beginType(string typeName);
-	
+		/// <summary>
+		/// Generates a statement to end a type
+		/// </summary>
+		/// <param name="typeName">
+		/// The name of the type
+		/// </param>
+		/// <returns>
+		/// A statement to end the typ
