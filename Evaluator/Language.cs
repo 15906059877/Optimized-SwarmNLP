@@ -65,4 +65,9 @@ namespace Evaluator
 	/// <summary>
 	/// A basic specification of the syntax of C#
 	/// </summary>
-	public class CSharpLanguage : Lang
+	public class CSharpLanguage : Language
+	{
+		/// <summary>
+		/// Generates a statement to allow treatment of classes within an assembly/namespace as if they were local
+		/// </summary>
+		/// <param name="assemblyNa
