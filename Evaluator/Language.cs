@@ -74,4 +74,8 @@ namespace Evaluator
 		/// The name of the assembly to be treated as local
 		/// </param>
 		/// <returns>
-		/// A statement that will allow treatment of classes within an assembly/namespa
+		/// A statement that will allow treatment of classes within an assembly/namespace as if they were local
+		/// </returns>
+		public override string useStatement(string assemblyName)
+		{
+			return String.Format("using {0};{1}", assemblyName, Environment.NewLine)
