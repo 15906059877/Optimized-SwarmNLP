@@ -78,4 +78,13 @@ namespace Evaluator
 		/// </returns>
 		public override string useStatement(string assemblyName)
 		{
-			return String.Format("using {0};{1}", assemblyName, Environment.NewLine)
+			return String.Format("using {0};{1}", assemblyName, Environment.NewLine);
+		}
+
+		/// <summary>
+		/// Generates a statement to begin a namespace
+		/// </summary>
+		/// <param name="namespaceName">
+		/// The name of the namespace
+		/// </param>
+		/// <retu
