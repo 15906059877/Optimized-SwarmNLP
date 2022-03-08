@@ -87,4 +87,10 @@ namespace Evaluator
 		/// <param name="namespaceName">
 		/// The name of the namespace
 		/// </param>
-		/// <retu
+		/// <returns>
+		/// A statement to begin the namespace
+		/// </returns>
+		public override string beginNamespace(string namespaceName)
+		{
+			StringBuilder r = new StringBuilder();
+			r.AppendF
