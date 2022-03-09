@@ -93,4 +93,10 @@ namespace Evaluator
 		public override string beginNamespace(string namespaceName)
 		{
 			StringBuilder r = new StringBuilder();
-			r.AppendF
+			r.AppendFormat("namespace {0}{1}", namespaceName, Environment.NewLine);
+			r.Append("{");
+			r.Append(Environment.NewLine);
+			return r.ToString();
+		}
+		/// <summary>
+		/// Generates a statement to end
