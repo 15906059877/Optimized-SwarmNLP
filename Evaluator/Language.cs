@@ -99,4 +99,12 @@ namespace Evaluator
 			return r.ToString();
 		}
 		/// <summary>
-		/// Generates a statement to end
+		/// Generates a statement to end a namespace
+		/// </summary>
+		/// <param name="namespaceName">
+		/// The name of the namespace
+		/// </param>
+		/// <returns>
+		/// A statement to end the namespace
+		/// </returns>
+	
