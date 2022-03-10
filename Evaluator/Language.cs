@@ -107,4 +107,9 @@ namespace Evaluator
 		/// <returns>
 		/// A statement to end the namespace
 		/// </returns>
-	
+		public override string endNamespace(string namespaceName)
+		{
+			StringBuilder r = new StringBuilder();
+			r.Append("}");
+			r.Append(Environment.NewLine);
+			return r.ToStrin
