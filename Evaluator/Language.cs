@@ -112,4 +112,14 @@ namespace Evaluator
 			StringBuilder r = new StringBuilder();
 			r.Append("}");
 			r.Append(Environment.NewLine);
-			return r.ToStrin
+			return r.ToString();
+		}
+
+		/// <summary>
+		/// Generates a statement to begin a type
+		/// </summary>
+		/// <param name="typeName">
+		/// The name of the type
+		/// </param>
+		/// <returns>
+		/// A statement to begin the
