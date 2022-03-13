@@ -122,4 +122,10 @@ namespace Evaluator
 		/// The name of the type
 		/// </param>
 		/// <returns>
-		/// A statement to begin the
+		/// A statement to begin the type
+		/// </returns>
+		public override string beginType(string typeName)
+		{
+			StringBuilder r = new StringBuilder();
+			r.AppendFormat("public class {0}{1}", typeName, Environment.NewLine);
+			r.Append
