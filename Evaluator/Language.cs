@@ -128,4 +128,12 @@ namespace Evaluator
 		{
 			StringBuilder r = new StringBuilder();
 			r.AppendFormat("public class {0}{1}", typeName, Environment.NewLine);
-			r.Append
+			r.Append("{");
+			r.Append(Environment.NewLine);
+			return r.ToString();
+		}
+		/// <summary>
+		/// Generates a statement to end a type
+		/// </summary>
+		/// <param name="typeName">
+		/// The name of t
