@@ -136,4 +136,11 @@ namespace Evaluator
 		/// Generates a statement to end a type
 		/// </summary>
 		/// <param name="typeName">
-		/// The name of t
+		/// The name of the type
+		/// </param>
+		/// <returns>
+		/// A statement to end the type
+		/// </returns>
+		public override string endType(string typeName)
+		{
+			StringBuilder r = new StringBu
