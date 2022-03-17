@@ -143,4 +143,12 @@ namespace Evaluator
 		/// </returns>
 		public override string endType(string typeName)
 		{
-			StringBuilder r = new StringBu
+			StringBuilder r = new StringBuilder();
+			r.Append(Environment.NewLine);
+			r.Append("}");
+			r.Append(Environment.NewLine);
+			return r.ToString();
+		}
+
+		/// <summary>
+		/// Constructs a new instance of the CSharpLanguageOptions cla
