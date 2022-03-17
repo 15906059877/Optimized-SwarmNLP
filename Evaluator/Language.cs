@@ -151,4 +151,15 @@ namespace Evaluator
 		}
 
 		/// <summary>
-		/// Constructs a new instance of the CSharpLanguageOptions cla
+		/// Constructs a new instance of the CSharpLanguageOptions class.
+		/// </summary>
+		public CSharpLanguage()
+		{;}
+	}
+
+	/// <summary>
+	/// A basic specification of the syntax of VB.NET
+	/// </summary>
+	public class VBLanguage : Language
+	{
+		/// <summary>
