@@ -163,3 +163,7 @@ namespace Evaluator
 	public class VBLanguage : Language
 	{
 		/// <summary>
+		/// Generates a statement to allow treatment of classes within an assembly/namespace as if they were local
+		/// </summary>
+		/// <param name="assemblyName">
+		/// The name of
