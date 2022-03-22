@@ -170,4 +170,11 @@ namespace Evaluator
 		/// </param>
 		/// <returns>
 		/// A statement that will allow treatment of classes within an assembly/namespace as if they were local
-		/// </returns
+		/// </returns>
+		public override string useStatement(string assemblyName)
+		{
+			return String.Format("Imports {0}{1}", assemblyName, Environment.NewLine);
+		}
+
+		/// <summary>
+		/// Generates a statement to begin a namespac
