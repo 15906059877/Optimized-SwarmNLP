@@ -177,4 +177,12 @@ namespace Evaluator
 		}
 
 		/// <summary>
-		/// Generates a statement to begin a namespac
+		/// Generates a statement to begin a namespace
+		/// </summary>
+		/// <param name="namespaceName">
+		/// The name of the namespace
+		/// </param>
+		/// <returns>
+		/// A statement to begin the namespace
+		/// </returns>
+		pu
