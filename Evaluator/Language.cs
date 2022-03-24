@@ -185,4 +185,9 @@ namespace Evaluator
 		/// <returns>
 		/// A statement to begin the namespace
 		/// </returns>
-		pu
+		public override string beginNamespace(string namespaceName)
+		{
+			return String.Format("Namespace {0}{1}", namespaceName, Environment.NewLine);
+		}
+		/// <summary>
+		/// Generates a statement to end a name
