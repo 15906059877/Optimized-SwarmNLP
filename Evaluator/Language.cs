@@ -198,4 +198,11 @@ namespace Evaluator
 		/// <returns>
 		/// A statement to end the namespace
 		/// </returns>
-		public ov
+		public override string endNamespace(string namespaceName)
+		{
+			return String.Format("End Namespace{0}", Environment.NewLine);
+		}
+
+		/// <summary>
+		/// Generates a statement to begin a type
+		/// </summ
