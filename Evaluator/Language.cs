@@ -205,4 +205,11 @@ namespace Evaluator
 
 		/// <summary>
 		/// Generates a statement to begin a type
-		/// </summ
+		/// </summary>
+		/// <param name="typeName">
+		/// The name of the type
+		/// </param>
+		/// <returns>
+		/// A statement to begin the type
+		/// </returns>
+		public override string beginTy
