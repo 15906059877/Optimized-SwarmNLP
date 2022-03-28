@@ -212,4 +212,10 @@ namespace Evaluator
 		/// <returns>
 		/// A statement to begin the type
 		/// </returns>
-		public override string beginTy
+		public override string beginType(string typeName)
+		{
+			return String.Format("Public Class {0}{1}", typeName, Environment.NewLine);
+		}
+		/// <summary>
+		/// Generates a statement to end a type
+		/// 
