@@ -225,4 +225,11 @@ namespace Evaluator
 		/// <returns>
 		/// A statement to end the type
 		/// </returns>
-		public override string 
+		public override string endType(string typeName)
+		{
+			return String.Format("{0}End Class{0}", Environment.NewLine);
+		}
+
+		/// <summary>
+		/// Constructs a new instance of the VBLanguageOptions class.
+		/// </su
