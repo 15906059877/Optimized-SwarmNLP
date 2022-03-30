@@ -232,4 +232,8 @@ namespace Evaluator
 
 		/// <summary>
 		/// Constructs a new instance of the VBLanguageOptions class.
-		/// </su
+		/// </summary>
+		public VBLanguage()
+		{;}
+	}
+}
