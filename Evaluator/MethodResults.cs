@@ -12,4 +12,12 @@ namespace Evaluator
 	/// </summary>
 	public class MethodResults
 	{
-		MethodInf
+		MethodInfo method;
+		TypeResults typeResults;
+        FastInvokeHandler FastInvoke;
+        object Instance;
+
+		/// <summary>
+		/// Invokes the compiled method.
+		/// </summary>
+		/// <param name="parameter
