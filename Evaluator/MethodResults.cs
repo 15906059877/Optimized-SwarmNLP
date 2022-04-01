@@ -20,4 +20,12 @@ namespace Evaluator
 		/// <summary>
 		/// Invokes the compiled method.
 		/// </summary>
-		/// <param name="parameter
+		/// <param name="parameters">
+		/// The parameters to pass to the method.
+		/// </param>
+		/// <returns>
+		/// The return value of the method.
+		/// </returns>
+		public object Invoke(params object[] parameters)
+		{
+			//return m
