@@ -28,4 +28,9 @@ namespace Evaluator
 		/// </returns>
 		public object Invoke(params object[] parameters)
 		{
-			//return m
+			//return method.Invoke(typeResults.Instantiate(), parameters);
+            return FastInvoke.Invoke(Instance, parameters);
+		}
+
+		/// <summary>
+		/// The collectio
