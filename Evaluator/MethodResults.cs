@@ -44,4 +44,15 @@ namespace Evaluator
 		}
 
 		/// <summary>
-		/// The reflected
+		/// The reflected information on the final method produced by the compiler.
+		/// </summary>
+		public MethodInfo Method
+		{
+			get
+			{
+				return method;
+			}
+		}
+
+		/// <summary>
+		/// Initializes a new instan
