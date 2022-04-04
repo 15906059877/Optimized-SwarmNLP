@@ -55,4 +55,9 @@ namespace Evaluator
 		}
 
 		/// <summary>
-		/// Initializes a new instan
+		/// Initializes a new instance of the <see cref="TypeResults"/> class.
+		/// </summary>
+		/// <param name="methodReference">
+		/// The reflected information on the final method produced by the compiler.
+		/// </param>
+		/// <param n
