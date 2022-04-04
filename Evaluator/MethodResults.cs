@@ -60,4 +60,7 @@ namespace Evaluator
 		/// <param name="methodReference">
 		/// The reflected information on the final method produced by the compiler.
 		/// </param>
-		/// <param n
+		/// <param name="compiledType">
+		/// The results of the programmatically-accessed compilation of the containing type.
+		/// </param>
+		protected internal MethodResults(MethodInfo m
