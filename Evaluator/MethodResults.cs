@@ -63,4 +63,9 @@ namespace Evaluator
 		/// <param name="compiledType">
 		/// The results of the programmatically-accessed compilation of the containing type.
 		/// </param>
-		protected internal MethodResults(MethodInfo m
+		protected internal MethodResults(MethodInfo methodReference, TypeResults compiledType)
+		{
+			typeResults = compiledType;
+			method = methodReference;
+            Instance = typeResults.Instantiate();
+            FastInvoke = 
