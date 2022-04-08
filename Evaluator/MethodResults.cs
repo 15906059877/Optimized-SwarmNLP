@@ -68,4 +68,7 @@ namespace Evaluator
 			typeResults = compiledType;
 			method = methodReference;
             Instance = typeResults.Instantiate();
-            FastInvoke = 
+            FastInvoke = Hack.GetMethodInvoker(method);
+		}
+	}
+}
