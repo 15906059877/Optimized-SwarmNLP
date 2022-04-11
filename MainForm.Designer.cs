@@ -225,3 +225,67 @@ namespace SwarmNLP
             this.BestLabel.Text = "Optimal:";
             this.BestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // CursorLabel
+            // 
+            this.CursorLabel.Name = "CursorLabel";
+            this.CursorLabel.Size = new System.Drawing.Size(45, 17);
+            this.CursorLabel.Text = "Cursor:";
+            this.CursorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // MainDisplay
+            // 
+            this.MainDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainDisplay.Location = new System.Drawing.Point(0, 25);
+            this.MainDisplay.Name = "MainDisplay";
+            this.MainDisplay.Size = new System.Drawing.Size(469, 347);
+            this.MainDisplay.TabIndex = 2;
+            this.MainDisplay.Paint += new System.Windows.Forms.PaintEventHandler(this.MainDisplay_Paint);
+            this.MainDisplay.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainDisplay_MouseMove);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(469, 394);
+            this.Controls.Add(this.MainDisplay);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MainForm";
+            this.Text = "Swarm NLP";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton StopButton;
+        private System.Windows.Forms.ToolStripButton PlayButton;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private DisplayPanel MainDisplay;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripMenuItem ProblemButton;
+        private System.Windows.Forms.ToolStripMenuItem WindowButton;
+        private System.Windows.Forms.ToolStripMenuItem SwarmButton;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripComboBox xAxisCombo;
+        private System.Windows.Forms.ToolStripLabel ObjLabel;
+        private System.Windows.Forms.ToolStripComboBox yAxisCombo;
+        private System.Windows.Forms.ToolStripStatusLabel BestLabel;
+        private System.Windows.Forms.ToolStripStatusLabel CursorLabel;
+        private System.Windows.Forms.ToolStripButton OpenButton;
+        private System.Windows.Forms.ToolStripButton SaveButton;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.ToolStripComboBox ObjCombo;
+    }
+}
