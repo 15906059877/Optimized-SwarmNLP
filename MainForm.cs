@@ -11,4 +11,11 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
-using SwarmN
+using SwarmNLP.Properties;
+using Microsoft.CSharp;
+using Evaluator;
+
+namespace SwarmNLP
+{
+    //delegate float OptFunctionHandler(PointF pos);
+    //delegate bool MeetsConstraintsHandle
