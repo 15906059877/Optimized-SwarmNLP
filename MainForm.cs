@@ -18,4 +18,12 @@ using Evaluator;
 namespace SwarmNLP
 {
     //delegate float OptFunctionHandler(PointF pos);
-    //delegate bool MeetsConstraintsHandle
+    //delegate bool MeetsConstraintsHandler(PointF pos);
+    
+    delegate void Voidhandler();
+
+    public partial class MainForm : Form
+    {
+        Thread SwarmThread;
+        Thread RedrawThread;
+        internal AutoResetEvent Pro
