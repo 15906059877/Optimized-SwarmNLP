@@ -26,4 +26,10 @@ namespace SwarmNLP
     {
         Thread SwarmThread;
         Thread RedrawThread;
-        internal AutoResetEvent Pro
+        internal AutoResetEvent ProcessEvent = new AutoResetEvent(true);
+        internal AutoResetEvent RefreshEvent = new AutoResetEvent(true);
+        bool Shutdown;
+
+        Bitmap LatestBG;
+
+        floa
