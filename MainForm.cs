@@ -32,4 +32,12 @@ namespace SwarmNLP
 
         Bitmap LatestBG;
 
-        floa
+        float ImageWidth;
+        float ImageHeight;
+
+        Random RndGen = new Random(unchecked((int)DateTime.Now.Ticks));
+
+        internal Setup Config = new Setup();
+
+        // problem
+        internal bool[] M
