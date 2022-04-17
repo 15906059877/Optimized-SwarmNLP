@@ -48,4 +48,11 @@ namespace SwarmNLP
        
         internal ProblemForm Problem;
         internal WindowForm Window;
- 
+        internal SwarmForm Swarm;
+
+        internal int xDim = 0; // for x1
+        internal int yDim = 1; // for x2
+        internal int Obj = 0;
+
+        // Sim status
+        internal bool Pl
