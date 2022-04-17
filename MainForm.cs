@@ -40,4 +40,12 @@ namespace SwarmNLP
         internal Setup Config = new Setup();
 
         // problem
-        internal bool[] M
+        internal bool[] Max;
+        internal MethodResults[] Objectives;
+        internal MethodResults Constraints;
+
+        internal float Time = 0;
+       
+        internal ProblemForm Problem;
+        internal WindowForm Window;
+ 
