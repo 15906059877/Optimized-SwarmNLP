@@ -62,4 +62,9 @@ namespace SwarmNLP
         bool FreezeRefresh;
 
         internal float[] BestGlobalValue = new float[1];
-        intern
+        internal float[] BestGlobalCoord = new float[2];
+
+        internal List<float[]> NonDominatingCoords = new List<float[]>();
+        internal List<float[]> NonDominatingValues = new List<float[]>();
+
+        in
