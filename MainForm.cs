@@ -55,4 +55,11 @@ namespace SwarmNLP
         internal int Obj = 0;
 
         // Sim status
-        internal bool Pl
+        internal bool Play;
+        bool Step;
+        bool Reset;
+        internal bool SetupSwarm = true;
+        bool FreezeRefresh;
+
+        internal float[] BestGlobalValue = new float[1];
+        intern
