@@ -67,4 +67,9 @@ namespace SwarmNLP
         internal List<float[]> NonDominatingCoords = new List<float[]>();
         internal List<float[]> NonDominatingValues = new List<float[]>();
 
-        in
+        internal List<Particle> Bugs = new List<Particle>();
+
+        internal int BugSize = 2;
+        internal int SolutionsKept = 100;
+
+        int ColorBug = System.Drawing.ColorTranslato
