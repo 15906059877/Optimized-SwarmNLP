@@ -72,4 +72,13 @@ namespace SwarmNLP
         internal int BugSize = 2;
         internal int SolutionsKept = 100;
 
-        int ColorBug = System.Drawing.ColorTranslato
+        int ColorBug = System.Drawing.ColorTranslator.ToOle(Color.LimeGreen);
+        int ColorOpt = System.Drawing.ColorTranslator.ToOle(Color.Orange);
+
+
+
+        public MainForm()
+        {
+            InitializeComponent();
+
+            Problem = new ProblemForm(this
