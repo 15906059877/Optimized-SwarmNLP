@@ -81,4 +81,11 @@ namespace SwarmNLP
         {
             InitializeComponent();
 
-            Problem = new ProblemForm(this
+            Problem = new ProblemForm(this);
+            Window = new WindowForm(this);
+            Swarm = new SwarmForm(this);
+
+            Config.FunctionEqs.Add("Maximize: sin(x1 - x2)");
+
+            // testing
+ 
