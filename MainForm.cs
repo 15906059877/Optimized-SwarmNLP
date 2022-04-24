@@ -88,4 +88,6 @@ namespace SwarmNLP
             Config.FunctionEqs.Add("Maximize: sin(x1 - x2)");
 
             // testing
- 
+            //Config.FunctionEq = ("Math.Pow(x1,2) + Math.Pow(x2,2)");
+            //Config.FunctionEq = ("cos(abs(x1)+abs(x2))");
+            //Config.FunctionEq = ("cos(abs(x1)+abs(x2))*(abs(x1)+abs(x
