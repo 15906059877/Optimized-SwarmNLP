@@ -93,4 +93,8 @@ namespace SwarmNLP
             //Config.FunctionEq = ("cos(abs(x1)+abs(x2))*(abs(x1)+abs(x2))");
             //Config.FunctionEq = ("sin( pow( pow(x1,2)+pow(x2,2), 0.5 ) - t)"); Good
             //Config.FunctionEq = ("sin(t*pi*(pow(x1,2)+pow(x2,2)))/2");
-            //Config.Functi
+            //Config.FunctionEq = ("sin(exp(x1)*t)*cos(x1)*x2*t");
+            //Config.FunctionEq = ("exp(pow(x1,2) + pow(x2,2))");
+
+            Config.ConstraintEqs.Add("x1 > -9");
+            Config.ConstraintEqs.Add("x2 >
