@@ -97,4 +97,10 @@ namespace SwarmNLP
             //Config.FunctionEq = ("exp(pow(x1,2) + pow(x2,2))");
 
             Config.ConstraintEqs.Add("x1 > -9");
-            Config.ConstraintEqs.Add("x2 >
+            Config.ConstraintEqs.Add("x2 > -9");
+            Config.ConstraintEqs.Add("x1 < 9");
+            Config.ConstraintEqs.Add("x2 < 9");
+
+            CompileProblem();
+
+            RefreshAxisComb
