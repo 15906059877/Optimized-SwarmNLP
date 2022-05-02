@@ -103,4 +103,12 @@ namespace SwarmNLP
 
             CompileProblem();
 
-            RefreshAxisComb
+            RefreshAxisCombos();
+        }
+
+        internal void CompileProblem()
+        {
+            int objCount = Config.FunctionEqs.Count;
+
+            Max = new bool[objCount];
+            Objectives = n
