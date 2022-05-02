@@ -111,4 +111,9 @@ namespace SwarmNLP
             int objCount = Config.FunctionEqs.Count;
 
             Max = new bool[objCount];
-            Objectives = n
+            Objectives = new MethodResults[objCount];
+
+            for (int i = 0; i < objCount; i++)
+            {
+                Max[i] = Config.FunctionEqs[i].StartsWith("Maximize:");
+            
