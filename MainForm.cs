@@ -116,4 +116,7 @@ namespace SwarmNLP
             for (int i = 0; i < objCount; i++)
             {
                 Max[i] = Config.FunctionEqs[i].StartsWith("Maximize:");
-            
+                Objectives[i] = CompileFunction(Config.FunctionEqs[i].Substring(10), Config.Dimensions);
+            }
+
+            Constraints = CompileConstraints(Config.ConstraintEqs, Config.Dimensions);
