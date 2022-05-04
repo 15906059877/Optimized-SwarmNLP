@@ -120,3 +120,11 @@ namespace SwarmNLP
             }
 
             Constraints = CompileConstraints(Config.ConstraintEqs, Config.Dimensions);
+        }
+
+        internal void RefreshAxisCombos()
+        {
+            xAxisCombo.Items.Clear();
+            yAxisCombo.Items.Clear();
+
+            for (int i = 1; i <= Config.Dimension
