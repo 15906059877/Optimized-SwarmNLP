@@ -127,4 +127,10 @@ namespace SwarmNLP
             xAxisCombo.Items.Clear();
             yAxisCombo.Items.Clear();
 
-            for (int i = 1; i <= Config.Dimension
+            for (int i = 1; i <= Config.Dimensions; i++)
+            {
+                xAxisCombo.Items.Add("x" + i.ToString());
+                yAxisCombo.Items.Add("x" + i.ToString());
+            }
+
+            xAxisCombo.Sele
