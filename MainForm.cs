@@ -133,4 +133,10 @@ namespace SwarmNLP
                 yAxisCombo.Items.Add("x" + i.ToString());
             }
 
-            xAxisCombo.Sele
+            xAxisCombo.SelectedIndex = 0;
+            yAxisCombo.SelectedIndex = Config.Dimensions > 0 ? 1 : 0;
+
+
+            ObjCombo.Items.Clear();
+            
+            for(int i = 1; i <= Config.FunctionEqs.Count
