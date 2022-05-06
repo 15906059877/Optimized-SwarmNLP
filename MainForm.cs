@@ -139,4 +139,10 @@ namespace SwarmNLP
 
             ObjCombo.Items.Clear();
             
-            for(int i = 1; i <= Config.FunctionEqs.Count
+            for(int i = 1; i <= Config.FunctionEqs.Count; i++)
+                ObjCombo.Items.Add(i.ToString());
+
+            bool visible = Config.FunctionEqs.Count > 1;
+
+            ObjCombo.Visible = visible;
+            ObjLabel.Vis
