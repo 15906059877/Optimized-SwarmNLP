@@ -145,4 +145,11 @@ namespace SwarmNLP
             bool visible = Config.FunctionEqs.Count > 1;
 
             ObjCombo.Visible = visible;
-            ObjLabel.Vis
+            ObjLabel.Visible = visible;
+
+            ObjCombo.SelectedIndex = 0;
+        }
+
+        internal MethodResults CompileFunction(string code, int dims)
+        {
+            code = FillCode(
