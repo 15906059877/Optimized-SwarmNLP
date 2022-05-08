@@ -152,4 +152,9 @@ namespace SwarmNLP
 
         internal MethodResults CompileFunction(string code, int dims)
         {
-            code = FillCode(
+            code = FillCode(code, dims);
+            
+            code = "return (float) ( " + code + ");";
+
+            StringBuilder source = new StringBuilder();
+            source.Append("public f
