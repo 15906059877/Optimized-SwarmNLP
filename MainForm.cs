@@ -157,4 +157,8 @@ namespace SwarmNLP
             code = "return (float) ( " + code + ");";
 
             StringBuilder source = new StringBuilder();
-            source.Append("public f
+            source.Append("public float OptFunction(float[] x, float t)");
+            source.Append(Environment.NewLine);
+            source.Append("{");
+            source.Append(Environment.NewLine);
+            source
