@@ -167,4 +167,9 @@ namespace SwarmNLP
 
             try
             {
-                return Eval.CreateVirtualMethod
+                return Eval.CreateVirtualMethod(
+                    new CSharpCodeProvider().CreateCompiler(),
+                    source.ToString(),
+                    "OptFunction",
+                    new CSharpLanguage(),
+                 
