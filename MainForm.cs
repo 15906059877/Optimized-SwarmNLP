@@ -172,4 +172,10 @@ namespace SwarmNLP
                     source.ToString(),
                     "OptFunction",
                     new CSharpLanguage(),
-                 
+                    false,
+                    "System.dll",
+                    "System.Drawing.dll");
+            }
+            catch (CompilationException ce)
+            {
+                MessageBox
