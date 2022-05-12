@@ -178,4 +178,11 @@ namespace SwarmNLP
             }
             catch (CompilationException ce)
             {
-                MessageBox
+                MessageBox.Show(this, "Compilation Errors: " + Environment.NewLine + ce.ToString());
+            }
+
+            return null;
+        }
+
+        internal string FillCode(string code, int dims)
+   
