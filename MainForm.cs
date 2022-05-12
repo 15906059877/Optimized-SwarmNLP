@@ -185,4 +185,8 @@ namespace SwarmNLP
         }
 
         internal string FillCode(string code, int dims)
-   
+        {
+            code = code.Replace("sin", "Math.Sin");
+            code = code.Replace("cos", "Math.Cos");
+            code = code.Replace("tan", "Math.Tan");
+            code =
