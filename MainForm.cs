@@ -189,4 +189,7 @@ namespace SwarmNLP
             code = code.Replace("sin", "Math.Sin");
             code = code.Replace("cos", "Math.Cos");
             code = code.Replace("tan", "Math.Tan");
-            code =
+            code = code.Replace("pow", "Math.Pow");
+            code = code.Replace("abs", "Math.Abs");
+            code = code.Replace("ln",  "Math.Log");
+            code = code.Replace("exp", "Math.Exp");
