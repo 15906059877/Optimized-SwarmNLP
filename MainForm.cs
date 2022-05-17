@@ -197,4 +197,8 @@ namespace SwarmNLP
             code = code.Replace("sqrt", "Math.Sqrt");
 
             code = code.Replace("=", "==");
-            code = code.Replace("<==", "<="
+            code = code.Replace("<==", "<=");
+            code = code.Replace(">==", ">=");
+
+            for (int i = dims; i >= 1; i--) // fill x11 before x1
+                code = code.Replace("x" + i.ToString(), "x[" + ((int)(i-1)).ToSt
