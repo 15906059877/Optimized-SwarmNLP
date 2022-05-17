@@ -193,3 +193,8 @@ namespace SwarmNLP
             code = code.Replace("abs", "Math.Abs");
             code = code.Replace("ln",  "Math.Log");
             code = code.Replace("exp", "Math.Exp");
+            code = code.Replace("pi", "Math.PI");
+            code = code.Replace("sqrt", "Math.Sqrt");
+
+            code = code.Replace("=", "==");
+            code = code.Replace("<==", "<="
