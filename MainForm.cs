@@ -201,4 +201,12 @@ namespace SwarmNLP
             code = code.Replace(">==", ">=");
 
             for (int i = dims; i >= 1; i--) // fill x11 before x1
-                code = code.Replace("x" + i.ToString(), "x[" + ((int)(i-1)).ToSt
+                code = code.Replace("x" + i.ToString(), "x[" + ((int)(i-1)).ToString() + "]");
+
+            return code;
+        }
+
+        internal MethodResults CompileConstraint(string constraint, int dims)
+        {
+            List<string> list = new List<string>();
+       
