@@ -209,4 +209,10 @@ namespace SwarmNLP
         internal MethodResults CompileConstraint(string constraint, int dims)
         {
             List<string> list = new List<string>();
+            list.Add(constraint);
+
+            return CompileConstraints(list, dims);
+        }
+
+        internal MethodResults CompileConstraints(List<string> constraints, int dims)
        
