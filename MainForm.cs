@@ -215,4 +215,10 @@ namespace SwarmNLP
         }
 
         internal MethodResults CompileConstraints(List<string> constraints, int dims)
-       
+        {
+            string code = "return ";
+
+            foreach(string eq in constraints)
+                code += "(" +  FillCode(eq, dims) + ") &&";
+
+            // if no constraints then co
