@@ -221,4 +221,12 @@ namespace SwarmNLP
             foreach(string eq in constraints)
                 code += "(" +  FillCode(eq, dims) + ") &&";
 
-            // if no constraints then co
+            // if no constraints then constraints always met (true)
+            if (constraints.Count == 0)
+                code += "true";
+            else
+                code = code.TrimEnd('&', ' ');
+
+            code += ";";
+
+       
