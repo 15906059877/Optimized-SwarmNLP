@@ -231,4 +231,8 @@ namespace SwarmNLP
 
             StringBuilder source = new StringBuilder();
             source.Append("public bool MeetsConstraint(float[] x, float t)");
-            source.Append(Environment.
+            source.Append(Environment.NewLine);
+            source.Append("{");
+            source.Append(Environment.NewLine);
+            source.Append(code);
+            source.Append(Environment.NewLine
