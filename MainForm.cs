@@ -242,4 +242,9 @@ namespace SwarmNLP
             {
                 return Eval.CreateVirtualMethod(
                     new CSharpCodeProvider().CreateCompiler(),
-                 
+                    source.ToString(),
+                    "MeetsConstraint",
+                    new CSharpLanguage(),
+                    false,
+                    "System.dll",
+      
