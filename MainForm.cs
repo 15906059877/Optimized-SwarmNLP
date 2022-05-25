@@ -235,4 +235,11 @@ namespace SwarmNLP
             source.Append("{");
             source.Append(Environment.NewLine);
             source.Append(code);
-            source.Append(Environment.NewLine
+            source.Append(Environment.NewLine);
+            source.Append("}");
+
+            try
+            {
+                return Eval.CreateVirtualMethod(
+                    new CSharpCodeProvider().CreateCompiler(),
+                 
