@@ -247,4 +247,8 @@ namespace SwarmNLP
                     new CSharpLanguage(),
                     false,
                     "System.dll",
-      
+                    "System.Drawing.dll");
+            }
+            catch (CompilationException ce)
+            {
+                MessageBox.Show(this, "Compilation Errors: " + Environment.NewLine + ce.ToString
