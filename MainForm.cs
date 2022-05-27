@@ -251,4 +251,14 @@ namespace SwarmNLP
             }
             catch (CompilationException ce)
             {
-                MessageBox.Show(this, "Compilation Errors: " + Environment.NewLine + ce.ToString
+                MessageBox.Show(this, "Compilation Errors: " + Environment.NewLine + ce.ToString());
+            }
+
+            return null;
+        }
+
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            RedrawThread = new Thread(GenerateBackground);
+       
