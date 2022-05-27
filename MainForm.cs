@@ -261,4 +261,10 @@ namespace SwarmNLP
         private void MainForm_Load(object sender, EventArgs e)
         {
             RedrawThread = new Thread(GenerateBackground);
-       
+            RedrawThread.Start();
+
+            SwarmThread = new Thread(RunSwarm);
+            SwarmThread.Start();
+        }
+
+        private void MainForm_FormClosing(object send
