@@ -267,4 +267,11 @@ namespace SwarmNLP
             SwarmThread.Start();
         }
 
-        private void MainForm_FormClosing(object send
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Shutdown = true;
+            
+            ProcessEvent.Set();
+            RefreshEvent.Set();
+
+            SwarmThread.Join();
