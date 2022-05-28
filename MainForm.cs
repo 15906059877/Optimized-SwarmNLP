@@ -275,3 +275,12 @@ namespace SwarmNLP
             RefreshEvent.Set();
 
             SwarmThread.Join();
+            RedrawThread.Join();
+        }
+
+        private void MainDisplay_Paint(object sender, PaintEventArgs e)
+        {
+            ProcessEvent.Set();
+        }
+
+    
