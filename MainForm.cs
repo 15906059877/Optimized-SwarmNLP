@@ -283,4 +283,7 @@ namespace SwarmNLP
             ProcessEvent.Set();
         }
 
-    
+        /// <summary>
+        /// An intense function because it runs the objective function for every pixel
+        /// That's why it's not done often, and in a different thread
+  
