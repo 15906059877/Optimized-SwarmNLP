@@ -286,4 +286,11 @@ namespace SwarmNLP
         /// <summary>
         /// An intense function because it runs the objective function for every pixel
         /// That's why it's not done often, and in a different thread
-  
+        /// </summary>
+        void GenerateBackground()
+        {
+            float[,] heightMap;
+            bool[,] failMap;
+
+            float result = 0;
+            float highest = float.MinV
