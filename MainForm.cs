@@ -293,4 +293,10 @@ namespace SwarmNLP
             bool[,] failMap;
 
             float result = 0;
-            float highest = float.MinV
+            float highest = float.MinValue;
+            float lowest = float.MaxValue;
+            float range = 1;
+            float[] graphPos = new float[Config.Dimensions];
+            float drawTime = Time;
+
+           
