@@ -299,4 +299,9 @@ namespace SwarmNLP
             float[] graphPos = new float[Config.Dimensions];
             float drawTime = Time;
 
-           
+            float[] coords = new float[Config.Dimensions];
+            float[] maxs = new float[Config.Dimensions];
+            float[] mins = new float[Config.Dimensions];
+
+            while (!Shutdown)
+    
