@@ -304,4 +304,11 @@ namespace SwarmNLP
             float[] mins = new float[Config.Dimensions];
 
             while (!Shutdown)
-    
+            {
+                RefreshEvent.WaitOne();
+
+                if (FreezeRefresh)
+                    continue;
+
+                int width = MainDisplay.Width / Config.Scaling;
+                int he
