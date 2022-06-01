@@ -311,4 +311,9 @@ namespace SwarmNLP
                     continue;
 
                 int width = MainDisplay.Width / Config.Scaling;
-                int he
+                int height = MainDisplay.Height / Config.Scaling;
+
+                if (width <= 0 || height <= 0)
+                    continue;
+
+                Bitmap bg = new Bitmap(wid
