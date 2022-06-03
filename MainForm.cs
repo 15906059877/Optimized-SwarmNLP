@@ -316,4 +316,12 @@ namespace SwarmNLP
                 if (width <= 0 || height <= 0)
                     continue;
 
-                Bitmap bg = new Bitmap(wid
+                Bitmap bg = new Bitmap(width, height);
+
+                ImageWidth = width;
+                ImageHeight = height;
+
+                heightMap = new float[width, height];
+                failMap = new bool[width, height];
+
+                
