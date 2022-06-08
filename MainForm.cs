@@ -324,4 +324,9 @@ namespace SwarmNLP
                 heightMap = new float[width, height];
                 failMap = new bool[width, height];
 
-                
+                highest = float.MinValue;
+                lowest = float.MaxValue;
+
+                // keep these vars constant so drawing is consistant while other thread keeps playing
+
+                dra
