@@ -334,4 +334,10 @@ namespace SwarmNLP
                 if (Config.Dimensions != coords.Length)
                 {
                     coords = new float[Config.Dimensions];
-                    mins = new float[Config.Dimen
+                    mins = new float[Config.Dimensions];
+                    maxs = new float[Config.Dimensions];
+                }
+
+                BestGlobalCoord.CopyTo(coords, 0);
+                Config.winMax.CopyTo(maxs, 0);
+   
