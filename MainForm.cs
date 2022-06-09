@@ -329,4 +329,9 @@ namespace SwarmNLP
 
                 // keep these vars constant so drawing is consistant while other thread keeps playing
 
-                dra
+                drawTime = Time;
+
+                if (Config.Dimensions != coords.Length)
+                {
+                    coords = new float[Config.Dimensions];
+                    mins = new float[Config.Dimen
