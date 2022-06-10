@@ -345,3 +345,7 @@ namespace SwarmNLP
                 // get height of points
                 for (int y = 0; y < height; y++)
                     for (int x = 0; x < width; x++)
+                    {
+                        // get height
+                        graphPos = BitmapToGraph(x, y, coords, mins, maxs);
+                        result = (float)Objectives[Obj].I
