@@ -340,4 +340,8 @@ namespace SwarmNLP
 
                 BestGlobalCoord.CopyTo(coords, 0);
                 Config.winMax.CopyTo(maxs, 0);
-   
+                Config.winMin.CopyTo(mins, 0);
+
+                // get height of points
+                for (int y = 0; y < height; y++)
+                    for (int x = 0; x < width; x++)
