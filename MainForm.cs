@@ -348,4 +348,8 @@ namespace SwarmNLP
                     {
                         // get height
                         graphPos = BitmapToGraph(x, y, coords, mins, maxs);
-                        result = (float)Objectives[Obj].I
+                        result = (float)Objectives[Obj].Invoke(graphPos, drawTime);
+
+                        // normalize so gradient data isnt drowned out by extreme ranges
+                        if(result < BestGlobalValue[Obj] - 1000)
+                
