@@ -357,4 +357,9 @@ namespace SwarmNLP
                         if (result > BestGlobalValue[Obj] + 1000)
                             result = BestGlobalValue[Obj] + 1000;
 
-                   
+                        // set highest / lowest
+                        if (result < lowest)
+                                lowest = result;
+
+                        if (result > highest)
+                         
