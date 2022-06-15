@@ -352,4 +352,9 @@ namespace SwarmNLP
 
                         // normalize so gradient data isnt drowned out by extreme ranges
                         if(result < BestGlobalValue[Obj] - 1000)
-                
+                            result = BestGlobalValue[Obj] - 1000;
+
+                        if (result > BestGlobalValue[Obj] + 1000)
+                            result = BestGlobalValue[Obj] + 1000;
+
+                   
