@@ -367,4 +367,12 @@ namespace SwarmNLP
                         heightMap[x, y] = result;
 
                         // find if pixel boundary crosses the constraint
-                        failMap[x, y] = !((bool)Const
+                        failMap[x, y] = !((bool)Constraints.Invoke(graphPos, drawTime));
+                    }
+
+                range = highest - lowest;
+                if (range == 0)
+                    range = 1;
+
+
+       
