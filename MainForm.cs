@@ -375,4 +375,7 @@ namespace SwarmNLP
                     range = 1;
 
 
-       
+                // much faster to update bitmap like this
+                BitmapData bgData = bg.LockBits(new Rectangle(0, 0, width, height), ImageLockMode.ReadWrite, bg.PixelFormat);
+
+           
