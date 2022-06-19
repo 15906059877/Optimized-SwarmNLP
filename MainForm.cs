@@ -378,4 +378,10 @@ namespace SwarmNLP
                 // much faster to update bitmap like this
                 BitmapData bgData = bg.LockBits(new Rectangle(0, 0, width, height), ImageLockMode.ReadWrite, bg.PixelFormat);
 
-           
+                unsafe
+                {
+                    int* pData = (int*)bgData.Scan0.ToPointer();
+
+                    int pos = 0;
+                    int redness = 0;
+                    int greyness = 0;
