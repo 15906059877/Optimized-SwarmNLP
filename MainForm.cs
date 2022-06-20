@@ -385,3 +385,8 @@ namespace SwarmNLP
                     int pos = 0;
                     int redness = 0;
                     int greyness = 0;
+                    int intensity = 0;
+                    int hue = 0;
+                    Color rainbow;
+
+                    int boundaryColor = ColorTranslator.ToOle(Color.Blue
