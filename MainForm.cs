@@ -389,4 +389,9 @@ namespace SwarmNLP
                     int hue = 0;
                     Color rainbow;
 
-                    int boundaryColor = ColorTranslator.ToOle(Color.Blue
+                    int boundaryColor = ColorTranslator.ToOle(Color.Blue);
+
+                    // draw points
+                    for (int y = 0; y < height; y++)
+                        for (int x = 0; x < width; x++)
+                        
