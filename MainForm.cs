@@ -394,4 +394,7 @@ namespace SwarmNLP
                     // draw points
                     for (int y = 0; y < height; y++)
                         for (int x = 0; x < width; x++)
-                        
+                        {
+                            pos = y * bgData.Stride / 4 + x; // stride is always in bytes, y is adjusted for 32 bit
+
+                            //hue = (int) (150 - (150 * ((He
