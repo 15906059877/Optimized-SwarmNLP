@@ -397,4 +397,9 @@ namespace SwarmNLP
                         {
                             pos = y * bgData.Stride / 4 + x; // stride is always in bytes, y is adjusted for 32 bit
 
-                            //hue = (int) (150 - (150 * ((He
+                            //hue = (int) (150 - (150 * ((HeightMap[x, y] - lowest) / range)));
+                            //rainbow = HLStoRGB(hue, 120, 240);
+
+                            intensity = failMap[x, y] ? 127 : 255;
+
+                  
