@@ -407,4 +407,7 @@ namespace SwarmNLP
                             redness = greyness;
 
                             if (failMap[x, y])
-                
+                            {
+                                greyness = 96 + greyness; // lower bound for failed point is 96, max 224
+                                redness = greyness + 32; // red can go from 128 to 256
+    
