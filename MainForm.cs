@@ -402,4 +402,9 @@ namespace SwarmNLP
 
                             intensity = failMap[x, y] ? 127 : 255;
 
-                  
+                            greyness = (byte)(intensity * ((heightMap[x, y] - lowest) / range));
+
+                            redness = greyness;
+
+                            if (failMap[x, y])
+                
