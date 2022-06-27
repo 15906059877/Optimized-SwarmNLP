@@ -414,4 +414,11 @@ namespace SwarmNLP
 
 
                             //pData[pos] = ColorTranslator.ToOle(Color.FromArgb(255, color, color, color));
-                            pData[pos] = (2
+                            pData[pos] = (255 << 24) | (redness << 16) | (greyness << 8) | greyness; // ARGB
+                        }
+                }
+
+                bg.UnlockBits(bgData);
+
+                LatestBG = bg;
+                Proce
