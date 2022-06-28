@@ -421,4 +421,14 @@ namespace SwarmNLP
                 bg.UnlockBits(bgData);
 
                 LatestBG = bg;
-                Proce
+                ProcessEvent.Set(); // make sure its drawn
+            }
+        }
+
+        void RunSwarm()
+        {
+            Bitmap Background = new Bitmap(10, 10);
+
+            
+            IntPtr mainDC;
+            IntPtr memD
