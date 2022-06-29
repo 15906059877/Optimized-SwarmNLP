@@ -431,4 +431,11 @@ namespace SwarmNLP
 
             
             IntPtr mainDC;
-            IntPtr memD
+            IntPtr memDC;
+            IntPtr tempDC;
+            IntPtr OffscreenBmp;
+            IntPtr oldBmp;
+            IntPtr hBitmap = IntPtr.Zero;
+            IntPtr prevBmp;
+
+            IntPtr bugPen = Win32.Crea
