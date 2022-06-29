@@ -438,4 +438,7 @@ namespace SwarmNLP
             IntPtr hBitmap = IntPtr.Zero;
             IntPtr prevBmp;
 
-            IntPtr bugPen = Win32.Crea
+            IntPtr bugPen = Win32.CreatePen(Win32.PenStyles.PS_SOLID, 1, ColorBug);
+            IntPtr bugBrush = Win32.CreateSolidBrush(ColorBug);;
+
+            IntPtr optPen = Win32.CreatePen(Win32.PenStyles.PS_SOLI
