@@ -441,4 +441,12 @@ namespace SwarmNLP
             IntPtr bugPen = Win32.CreatePen(Win32.PenStyles.PS_SOLID, 1, ColorBug);
             IntPtr bugBrush = Win32.CreateSolidBrush(ColorBug);;
 
-            IntPtr optPen = Win32.CreatePen(Win32.PenStyles.PS_SOLI
+            IntPtr optPen = Win32.CreatePen(Win32.PenStyles.PS_SOLID, 1, ColorOpt);
+            IntPtr optBrush = Win32.CreateSolidBrush(ColorOpt);
+
+            IntPtr oldPen;
+            IntPtr oldBrush;
+
+            int attempts = 0;
+            int cycleTime = 0;
+       
