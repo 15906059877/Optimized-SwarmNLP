@@ -449,4 +449,12 @@ namespace SwarmNLP
 
             int attempts = 0;
             int cycleTime = 0;
-       
+            Point displayPos = new Point();
+            float[] bugValue = new float[1];
+
+
+            while (!Shutdown)
+            {
+                ProcessEvent.WaitOne();
+
+     
