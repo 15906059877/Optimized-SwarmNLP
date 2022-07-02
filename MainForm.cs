@@ -457,4 +457,5 @@ namespace SwarmNLP
             {
                 ProcessEvent.WaitOne();
 
-     
+                // draw background to offscreen
+                if (Background.Width != MainDisplay.Width / Config.Scaling || Background.Height != MainDisplay.Height / Config.Scaling
