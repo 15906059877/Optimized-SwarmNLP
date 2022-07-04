@@ -458,4 +458,12 @@ namespace SwarmNLP
                 ProcessEvent.WaitOne();
 
                 // draw background to offscreen
-                if (Background.Width != MainDisplay.Width / Config.Scaling || Background.Height != MainDisplay.Height / Config.Scaling
+                if (Background.Width != MainDisplay.Width / Config.Scaling || Background.Height != MainDisplay.Height / Config.Scaling)
+                    RefreshEvent.Set();
+
+                if (Reset)
+                {
+                    Reset = false;
+                    Time = 0;
+
+                    BestGlobalValue = new float[Objecti
