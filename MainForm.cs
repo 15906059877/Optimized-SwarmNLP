@@ -466,4 +466,8 @@ namespace SwarmNLP
                     Reset = false;
                     Time = 0;
 
-                    BestGlobalValue = new float[Objecti
+                    BestGlobalValue = new float[Objectives.Length];
+                    bugValue = new float[Objectives.Length];
+
+                    for(int i = 0; i < Objectives.Length; i++)
+                        BestGlo
