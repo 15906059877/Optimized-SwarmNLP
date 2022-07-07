@@ -470,4 +470,8 @@ namespace SwarmNLP
                     bugValue = new float[Objectives.Length];
 
                     for(int i = 0; i < Objectives.Length; i++)
-                        BestGlo
+                        BestGlobalValue[i] = Max[i] ? float.MinValue : float.MaxValue;
+
+                    BestGlobalCoord = new float[Config.Dimensions];
+
+                    NonDominatingCoords.Cl
