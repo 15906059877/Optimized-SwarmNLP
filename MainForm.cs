@@ -474,4 +474,12 @@ namespace SwarmNLP
 
                     BestGlobalCoord = new float[Config.Dimensions];
 
-                    NonDominatingCoords.Cl
+                    NonDominatingCoords.Clear();
+                    NonDominatingValues.Clear();
+                }
+
+                if (SetupSwarm)
+                {
+                    SetupSwarm = false;
+
+                    Bugs.Clea
