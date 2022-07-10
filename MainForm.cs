@@ -482,4 +482,8 @@ namespace SwarmNLP
                 {
                     SetupSwarm = false;
 
-                    Bugs.Clea
+                    Bugs.Clear();
+
+                    if(TryGetFeasible( BestGlobalCoord))
+                        for(int i = 0; i < BestGlobalValue.Length; i++)
+                            BestGlobalValue[i] = (float) Obje
