@@ -486,4 +486,9 @@ namespace SwarmNLP
 
                     if(TryGetFeasible( BestGlobalCoord))
                         for(int i = 0; i < BestGlobalValue.Length; i++)
-                            BestGlobalValue[i] = (float) Obje
+                            BestGlobalValue[i] = (float) Objectives[i].Invoke(BestGlobalCoord, Time);
+
+                    RefreshEvent.Set();  // ensures that when new setup loaded, it is viewed in right slice
+                }
+
+                if (
