@@ -491,4 +491,11 @@ namespace SwarmNLP
                     RefreshEvent.Set();  // ensures that when new setup loaded, it is viewed in right slice
                 }
 
-                if (
+                if (LatestBG != null)
+                {
+                    Background = LatestBG;
+                    LatestBG = null;
+
+                    if (hBitmap != IntPtr.Zero)
+                    {
+           
