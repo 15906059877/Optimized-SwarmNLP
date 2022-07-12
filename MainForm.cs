@@ -498,4 +498,9 @@ namespace SwarmNLP
 
                     if (hBitmap != IntPtr.Zero)
                     {
-           
+                        Win32.DeleteObject(hBitmap);
+                        hBitmap = IntPtr.Zero;
+                    }
+
+                    hBitmap = Background.GetHbitmap();
+            
