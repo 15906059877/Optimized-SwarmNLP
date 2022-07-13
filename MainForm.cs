@@ -503,4 +503,9 @@ namespace SwarmNLP
                     }
 
                     hBitmap = Background.GetHbitmap();
-            
+                    
+                }
+
+                // start drawing
+                Graphics mainGraphics = MainDisplay.CreateGraphics();
+                mainDC = mainGr
