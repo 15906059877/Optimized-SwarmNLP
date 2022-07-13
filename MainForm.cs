@@ -508,4 +508,8 @@ namespace SwarmNLP
 
                 // start drawing
                 Graphics mainGraphics = MainDisplay.CreateGraphics();
-                mainDC = mainGr
+                mainDC = mainGraphics.GetHdc();
+
+                // create memeory DC and select an offscreen bmp into it
+                memDC = Win32.CreateCompatibleDC(mainDC);
+                OffscreenBmp = Win32.CreateCom
