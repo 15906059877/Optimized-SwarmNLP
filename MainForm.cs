@@ -512,4 +512,8 @@ namespace SwarmNLP
 
                 // create memeory DC and select an offscreen bmp into it
                 memDC = Win32.CreateCompatibleDC(mainDC);
-                OffscreenBmp = Win32.CreateCom
+                OffscreenBmp = Win32.CreateCompatibleBitmap(mainDC, MainDisplay.Width, MainDisplay.Height);
+                oldBmp = Win32.SelectObject(memDC, OffscreenBmp);
+                
+
+                tempDC = Win32.CreateCompat
