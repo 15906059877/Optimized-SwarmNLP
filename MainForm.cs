@@ -516,4 +516,6 @@ namespace SwarmNLP
                 oldBmp = Win32.SelectObject(memDC, OffscreenBmp);
                 
 
-                tempDC = Win32.CreateCompat
+                tempDC = Win32.CreateCompatibleDC(mainDC);       
+                prevBmp = Win32.SelectObject(tempDC, hBitmap);
+                Win32.StretchBlt(memDC, 0, 0, MainDisplay.Width, MainDisplay.Height, tempDC, 
