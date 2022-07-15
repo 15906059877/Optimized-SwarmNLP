@@ -518,4 +518,9 @@ namespace SwarmNLP
 
                 tempDC = Win32.CreateCompatibleDC(mainDC);       
                 prevBmp = Win32.SelectObject(tempDC, hBitmap);
-                Win32.StretchBlt(memDC, 0, 0, MainDisplay.Width, MainDisplay.Height, tempDC, 
+                Win32.StretchBlt(memDC, 0, 0, MainDisplay.Width, MainDisplay.Height, tempDC, 0, 0, Background.Width, Background.Height, (int)Win32.SRCCOPY);
+                Win32.SelectObject(tempDC, prevBmp); 
+                Win32.DeleteDC(tempDC);
+
+
+                // draw the swarm
