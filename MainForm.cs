@@ -524,3 +524,9 @@ namespace SwarmNLP
 
 
                 // draw the swarm
+                oldPen = Win32.SelectObject(memDC, bugPen);
+                oldBrush = Win32.SelectObject(memDC, bugBrush);
+
+
+                // add/remove bugs
+                while (Bugs.Cou
