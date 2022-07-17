@@ -529,4 +529,9 @@ namespace SwarmNLP
 
 
                 // add/remove bugs
-                while (Bugs.Cou
+                while (Bugs.Count > Config.Entities)
+                    Bugs.RemoveAt(0);
+
+                if (Config.Entities > Bugs.Count)
+                {
+                    int add = Bugs.Count; // AddBug can fail so 
