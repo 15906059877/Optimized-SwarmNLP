@@ -540,4 +540,5 @@ namespace SwarmNLP
                 }
 
 
-                //
+                // use cycle time so that we can 'see' particles moving towards new destination, otherwise it looks like random jumps
+                foreach (Particle bug in Bugs)
