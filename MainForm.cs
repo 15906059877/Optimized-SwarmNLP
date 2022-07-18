@@ -534,4 +534,10 @@ namespace SwarmNLP
 
                 if (Config.Entities > Bugs.Count)
                 {
-                    int add = Bugs.Count; // AddBug can fail so 
+                    int add = Bugs.Count; // AddBug can fail so we only interate a set amount
+                    for (int i = 0; i < Config.Entities - add; i++)
+                        AddBug();
+                }
+
+
+                //
