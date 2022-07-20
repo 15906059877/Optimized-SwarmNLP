@@ -542,3 +542,9 @@ namespace SwarmNLP
 
                 // use cycle time so that we can 'see' particles moving towards new destination, otherwise it looks like random jumps
                 foreach (Particle bug in Bugs)
+                {
+                    if (Play || Step)
+                    {
+                        if (cycleTime == 0)
+                        {
+                            // get velocity   THIS I
