@@ -547,4 +547,9 @@ namespace SwarmNLP
                     {
                         if (cycleTime == 0)
                         {
-                            // get velocity   THIS I
+                            // get velocity   THIS IS THE MEAT
+                            if (Config.Replusion)
+                            {
+                                Particle randBug = Bugs[RndGen.Next(0, Bugs.Count - 1)];
+
+                        
