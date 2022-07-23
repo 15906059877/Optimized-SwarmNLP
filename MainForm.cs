@@ -552,4 +552,6 @@ namespace SwarmNLP
                             {
                                 Particle randBug = Bugs[RndGen.Next(0, Bugs.Count - 1)];
 
-                        
+                                for (int i = 0; i < Config.Dimensions; i++)
+                                    bug.TestV[i] = Config.Inertia * bug.Velocity[i] +
+                                                    Config.PersonalPref * (floa
