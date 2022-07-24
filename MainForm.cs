@@ -555,4 +555,7 @@ namespace SwarmNLP
                                 for (int i = 0; i < Config.Dimensions; i++)
                                     bug.TestV[i] = Config.Inertia * bug.Velocity[i] +
                                                     Config.PersonalPref * (float)RndGen.NextDouble() * (bug.Best[i] - bug.Postion[i]) +
-                                                    -1 * Config.GlobalPref * (float)RndGen.NextDouble() * /* Config.Inertia */ (randBug.
+                                                    -1 * Config.GlobalPref * (float)RndGen.NextDouble() * /* Config.Inertia */ (randBug.Best[i] - bug.Postion[i]) +
+                                                    2 * (float)RndGen.NextDouble() * /* Config.Inertia */ (float)RndGen.NextDouble();
+
+            
