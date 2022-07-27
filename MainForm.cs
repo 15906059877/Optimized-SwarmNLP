@@ -558,4 +558,8 @@ namespace SwarmNLP
                                                     -1 * Config.GlobalPref * (float)RndGen.NextDouble() * /* Config.Inertia */ (randBug.Best[i] - bug.Postion[i]) +
                                                     2 * (float)RndGen.NextDouble() * /* Config.Inertia */ (float)RndGen.NextDouble();
 
-            
+                            }
+                            else
+                            {
+                                // choose a random best global to go towards
+                                var be
