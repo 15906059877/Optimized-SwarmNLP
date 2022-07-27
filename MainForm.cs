@@ -562,4 +562,6 @@ namespace SwarmNLP
                             else
                             {
                                 // choose a random best global to go towards
-                                var be
+                                var bestGlobal = BestGlobalCoord;
+                                if(NonDominatingCoords.Count > 0)
+                                    bestGlobal = NonDominatingCoords[RndGen.Next(NonDominatingCo
