@@ -564,4 +564,8 @@ namespace SwarmNLP
                                 // choose a random best global to go towards
                                 var bestGlobal = BestGlobalCoord;
                                 if(NonDominatingCoords.Count > 0)
-                                    bestGlobal = NonDominatingCoords[RndGen.Next(NonDominatingCo
+                                    bestGlobal = NonDominatingCoords[RndGen.Next(NonDominatingCoords.Count)];
+
+                                for(int i = 0; i < Config.Dimensions; i++)
+                                    bug.TestV[i] = Config.Inertia * bug.Velocity[i] +
+                   
