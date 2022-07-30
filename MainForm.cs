@@ -575,4 +575,7 @@ namespace SwarmNLP
 
                             bug.MoveNext = false;
                             
-                      
+                            attempts = 20;
+                            while (attempts > 0)
+                                // if new position feasible switch set velocity to the test
+                           
