@@ -581,4 +581,9 @@ namespace SwarmNLP
                                 if (IsFeasible(bug.Postion, bug.TestV))
                                 {
                                     float[] velocity = bug.TestV;
-                                    bug.TestV = b
+                                    bug.TestV = bug.Velocity;
+                                    bug.Velocity = velocity;
+
+                                    bug.MoveNext = true;
+
+                                
