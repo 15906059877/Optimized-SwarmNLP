@@ -578,4 +578,7 @@ namespace SwarmNLP
                             attempts = 20;
                             while (attempts > 0)
                                 // if new position feasible switch set velocity to the test
-                           
+                                if (IsFeasible(bug.Postion, bug.TestV))
+                                {
+                                    float[] velocity = bug.TestV;
+                                    bug.TestV = b
