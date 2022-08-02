@@ -590,4 +590,6 @@ namespace SwarmNLP
                                 }
                                 // while outside bounds, halve velocity and recalc
                                 else
-    
+                                {
+                                    for (int i = 0; i < Config.Dimensions; i++)
+                                        bug.TestV[i] = bug.TestV[i] 
