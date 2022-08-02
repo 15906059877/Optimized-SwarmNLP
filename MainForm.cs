@@ -586,4 +586,8 @@ namespace SwarmNLP
 
                                     bug.MoveNext = true;
 
-                                
+                                    break;
+                                }
+                                // while outside bounds, halve velocity and recalc
+                                else
+    
