@@ -592,4 +592,11 @@ namespace SwarmNLP
                                 else
                                 {
                                     for (int i = 0; i < Config.Dimensions; i++)
-                                        bug.TestV[i] = bug.TestV[i] 
+                                        bug.TestV[i] = bug.TestV[i] / 2;
+
+                                    attempts--;
+                                }
+                        }
+
+                        // set next position
+                        
