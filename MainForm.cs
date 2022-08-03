@@ -599,4 +599,8 @@ namespace SwarmNLP
                         }
 
                         // set next position
-                        
+                        if(bug.MoveNext)
+                            for (int i = 0; i < Config.Dimensions; i++)
+                                bug.Postion[i] = bug.Postion[i] + bug.Velocity[i] / Config.FlyTime;
+
+
