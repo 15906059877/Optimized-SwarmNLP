@@ -607,4 +607,6 @@ namespace SwarmNLP
                         // let the particles fly a bit, take their values every so often
                         if (cycleTime == 0)
                         {
-                    
+                            // check for personal / global best 
+                            for(int i = 0; i < Objectives.Length; i++)
+                                bugValue[i] = (float)Objectives[i].Invoke(bug.P
