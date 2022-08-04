@@ -604,3 +604,7 @@ namespace SwarmNLP
                                 bug.Postion[i] = bug.Postion[i] + bug.Velocity[i] / Config.FlyTime;
 
 
+                        // let the particles fly a bit, take their values every so often
+                        if (cycleTime == 0)
+                        {
+                    
