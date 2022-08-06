@@ -609,4 +609,8 @@ namespace SwarmNLP
                         {
                             // check for personal / global best 
                             for(int i = 0; i < Objectives.Length; i++)
-                                bugValue[i] = (float)Objectives[i].Invoke(bug.P
+                                bugValue[i] = (float)Objectives[i].Invoke(bug.Postion, Time);
+
+                            // if time used in objectives, then values at coords need to be re-evaluated
+                            if (Config.TimeUsed)
+                            {
