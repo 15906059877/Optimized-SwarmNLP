@@ -615,4 +615,7 @@ namespace SwarmNLP
                             if (Config.TimeUsed)
                             {
                                 for (int i = 0; i < Objectives.Length; i++)
-                                    BestGlobalValue[i] = (float)Objectives[i].Invoke(BestGloba
+                                    BestGlobalValue[i] = (float)Objectives[i].Invoke(BestGlobalCoord, Time);
+
+                                for (int i = 0; i < NonDominatingCoords.Count; i++)
+                                    for (int x = 0; x < Obje
