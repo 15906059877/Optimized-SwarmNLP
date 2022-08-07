@@ -614,3 +614,5 @@ namespace SwarmNLP
                             // if time used in objectives, then values at coords need to be re-evaluated
                             if (Config.TimeUsed)
                             {
+                                for (int i = 0; i < Objectives.Length; i++)
+                                    BestGlobalValue[i] = (float)Objectives[i].Invoke(BestGloba
