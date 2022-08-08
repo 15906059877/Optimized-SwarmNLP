@@ -618,4 +618,8 @@ namespace SwarmNLP
                                     BestGlobalValue[i] = (float)Objectives[i].Invoke(BestGlobalCoord, Time);
 
                                 for (int i = 0; i < NonDominatingCoords.Count; i++)
-                                    for (int x = 0; x < Obje
+                                    for (int x = 0; x < Objectives.Length; x++)
+                                        NonDominatingValues[i][x] = (float)Objectives[x].Invoke(NonDominatingCoords[i], Time);
+                            }
+
+  
