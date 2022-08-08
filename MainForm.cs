@@ -622,4 +622,7 @@ namespace SwarmNLP
                                         NonDominatingValues[i][x] = (float)Objectives[x].Invoke(NonDominatingCoords[i], Time);
                             }
 
-  
+                            // if the position is better or non-dominates it's best
+                            if( NonDominatesPoint(bugValue, bug.BestValue))
+                            {
+        
