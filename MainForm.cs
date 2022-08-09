@@ -625,4 +625,9 @@ namespace SwarmNLP
                             // if the position is better or non-dominates it's best
                             if( NonDominatesPoint(bugValue, bug.BestValue))
                             {
-        
+                                bugValue.CopyTo(bug.BestValue, 0);
+
+                                bug.Postion.CopyTo(bug.Best, 0);
+                            }
+
+                            // if the bug po
