@@ -630,4 +630,7 @@ namespace SwarmNLP
                                 bug.Postion.CopyTo(bug.Best, 0);
                             }
 
-                            // if the bug po
+                            // if the bug position is not dominated by prev solutions
+                            if ( NonDominatesSet(bug.Postion, bugValue))
+                            {
+                                bug.Postion.CopyTo( BestGloba
