@@ -637,4 +637,8 @@ namespace SwarmNLP
 
                                 // redraw if our view plane changed because a gobal optimal changed
                                 if (Config.Dimensions > 2)
-           
+                                    RefreshEvent.Set();
+
+                                bugValue.CopyTo(BestGlobalValue, 0);
+
+                                // record points in non-d
