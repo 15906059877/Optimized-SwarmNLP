@@ -633,4 +633,8 @@ namespace SwarmNLP
                             // if the bug position is not dominated by prev solutions
                             if ( NonDominatesSet(bug.Postion, bugValue))
                             {
-                                bug.Postion.CopyTo( BestGloba
+                                bug.Postion.CopyTo( BestGlobalCoord, 0);
+
+                                // redraw if our view plane changed because a gobal optimal changed
+                                if (Config.Dimensions > 2)
+           
