@@ -641,4 +641,8 @@ namespace SwarmNLP
 
                                 bugValue.CopyTo(BestGlobalValue, 0);
 
-                                // record points in non-d
+                                // record points in non-dominating set
+                                var bestCoord = new float[BestGlobalCoord.Length];
+                                var bestValue = new float[bugValue.Length];
+
+                              
