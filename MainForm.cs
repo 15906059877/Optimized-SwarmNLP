@@ -645,4 +645,8 @@ namespace SwarmNLP
                                 var bestCoord = new float[BestGlobalCoord.Length];
                                 var bestValue = new float[bugValue.Length];
 
-                              
+                                BestGlobalCoord.CopyTo(bestCoord, 0);
+                                bugValue.CopyTo(bestValue, 0);
+
+                                NonDominatingCoords.Add(bestCoord);
+      
