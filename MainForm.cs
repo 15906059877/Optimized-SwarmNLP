@@ -652,4 +652,8 @@ namespace SwarmNLP
                                 NonDominatingValues.Add(bestValue);
                                 if (NonDominatingCoords.Count > SolutionsKept)
                                 {
-                   
+                                    NonDominatingCoords.RemoveAt(0);
+                                    NonDominatingValues.RemoveAt(0);
+                                }
+
+                                BeginI
