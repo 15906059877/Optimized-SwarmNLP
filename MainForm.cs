@@ -649,4 +649,7 @@ namespace SwarmNLP
                                 bugValue.CopyTo(bestValue, 0);
 
                                 NonDominatingCoords.Add(bestCoord);
-      
+                                NonDominatingValues.Add(bestValue);
+                                if (NonDominatingCoords.Count > SolutionsKept)
+                                {
+                   
