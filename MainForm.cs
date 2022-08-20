@@ -656,4 +656,10 @@ namespace SwarmNLP
                                     NonDominatingValues.RemoveAt(0);
                                 }
 
-                                BeginI
+                                BeginInvoke(new Voidhandler(StatusBarUpdate));
+                            }
+                        }
+                    }
+
+                    // draw
+           
