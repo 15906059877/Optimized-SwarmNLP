@@ -662,4 +662,5 @@ namespace SwarmNLP
                     }
 
                     // draw
-           
+                    displayPos = GraphtoWindow(bug.Postion);
+                    Win32.Ellipse(memDC, displayPos.X - BugSize, displayPos.Y - BugSize, displayPos.X + BugSize, displayPos.
