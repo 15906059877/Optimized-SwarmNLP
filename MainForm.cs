@@ -663,4 +663,12 @@ namespace SwarmNLP
 
                     // draw
                     displayPos = GraphtoWindow(bug.Postion);
-                    Win32.Ellipse(memDC, displayPos.X - BugSize, displayPos.Y - BugSize, displayPos.X + BugSize, displayPos.
+                    Win32.Ellipse(memDC, displayPos.X - BugSize, displayPos.Y - BugSize, displayPos.X + BugSize, displayPos.Y + BugSize);
+                }
+
+                Win32.SelectObject(memDC, oldPen);
+                Win32.SelectObject(memDC, oldBrush);
+
+
+                // draw global optimum
+                oldPen
