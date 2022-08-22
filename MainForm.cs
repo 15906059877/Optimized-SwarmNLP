@@ -671,4 +671,8 @@ namespace SwarmNLP
 
 
                 // draw global optimum
-                oldPen
+                oldPen = Win32.SelectObject(memDC, optPen);
+                oldBrush = Win32.SelectObject(memDC, optBrush);
+
+                displayPos = GraphtoWindow(BestGlobalCoord);
+                Win32.Ellipse(memDC, displayPo
