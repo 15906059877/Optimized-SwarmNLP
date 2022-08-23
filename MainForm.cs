@@ -675,4 +675,8 @@ namespace SwarmNLP
                 oldBrush = Win32.SelectObject(memDC, optBrush);
 
                 displayPos = GraphtoWindow(BestGlobalCoord);
-                Win32.Ellipse(memDC, displayPo
+                Win32.Ellipse(memDC, displayPos.X - BugSize, displayPos.Y - BugSize, displayPos.X + BugSize, displayPos.Y + BugSize);
+
+                foreach (var coord in NonDominatingCoords)
+                {
+                    displayPos = GraphtoWindow(c
