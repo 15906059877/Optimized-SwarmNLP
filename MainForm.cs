@@ -679,4 +679,8 @@ namespace SwarmNLP
 
                 foreach (var coord in NonDominatingCoords)
                 {
-                    displayPos = GraphtoWindow(c
+                    displayPos = GraphtoWindow(coord); 
+                    Win32.Ellipse(memDC, displayPos.X - 1, displayPos.Y - 1, displayPos.X + 1, displayPos.Y + 1);
+                }
+
+                Win32.SelectObject(mem
