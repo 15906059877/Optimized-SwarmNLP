@@ -683,4 +683,8 @@ namespace SwarmNLP
                     Win32.Ellipse(memDC, displayPos.X - 1, displayPos.Y - 1, displayPos.X + 1, displayPos.Y + 1);
                 }
 
-                Win32.SelectObject(mem
+                Win32.SelectObject(memDC, oldPen);
+                Win32.SelectObject(memDC, oldBrush);
+
+                // copy to main screen
+                Win32.BitBlt(mainDC, 0, 0, MainDisplay.Width, MainDisplay.Height, memDC, 0, 0, Win32.TernaryR
