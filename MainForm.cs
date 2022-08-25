@@ -687,4 +687,11 @@ namespace SwarmNLP
                 Win32.SelectObject(memDC, oldBrush);
 
                 // copy to main screen
-                Win32.BitBlt(mainDC, 0, 0, MainDisplay.Width, MainDisplay.Height, memDC, 0, 0, Win32.TernaryR
+                Win32.BitBlt(mainDC, 0, 0, MainDisplay.Width, MainDisplay.Height, memDC, 0, 0, Win32.TernaryRasterOperations.SRCCOPY);
+
+
+                // release objects
+                Win32.SelectObject(memDC, oldBmp);
+                Win32.DeleteObject(OffscreenBmp);
+
+                Win32.DeleteDC(memDC
