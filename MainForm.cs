@@ -694,4 +694,13 @@ namespace SwarmNLP
                 Win32.SelectObject(memDC, oldBmp);
                 Win32.DeleteObject(OffscreenBmp);
 
-                Win32.DeleteDC(memDC
+                Win32.DeleteDC(memDC);
+                mainGraphics.ReleaseHdc(mainDC);
+
+
+                // finish
+                if (Play || Step)
+                {
+                    cycleTime++;
+
+                    if (cycleTime >= Config.FlyTim
