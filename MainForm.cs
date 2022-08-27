@@ -703,4 +703,10 @@ namespace SwarmNLP
                 {
                     cycleTime++;
 
-                    if (cycleTime >= Config.FlyTim
+                    if (cycleTime >= Config.FlyTime)
+                        cycleTime = 0;
+
+                    if (Config.TimeInc != 0)
+                    {
+                        Time += Config.TimeInc;
+              
