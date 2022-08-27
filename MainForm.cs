@@ -709,4 +709,7 @@ namespace SwarmNLP
                     if (Config.TimeInc != 0)
                     {
                         Time += Config.TimeInc;
-              
+                        RefreshEvent.Set();
+
+                        for(int i = 0; i < BestGlobalValue.Length; i++)
+                        BestGlobalValue[i] = (float)Objectives[i].Invoke(BestGlobalCoord, T
