@@ -712,4 +712,12 @@ namespace SwarmNLP
                         RefreshEvent.Set();
 
                         for(int i = 0; i < BestGlobalValue.Length; i++)
-                        BestGlobalValue[i] = (float)Objectives[i].Invoke(BestGlobalCoord, T
+                        BestGlobalValue[i] = (float)Objectives[i].Invoke(BestGlobalCoord, Time); // value of best position has changed under the new time slice
+                    }
+                }
+
+                Step = false;
+
+                //Thread.Sleep(20);
+
+     
