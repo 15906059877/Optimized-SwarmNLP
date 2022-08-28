@@ -720,4 +720,11 @@ namespace SwarmNLP
 
                 //Thread.Sleep(20);
 
-     
+                if (Play)
+                    ProcessEvent.Set();
+            }
+
+            if (hBitmap != IntPtr.Zero)
+            {
+                Win32.DeleteObject(hBitmap);
+   
