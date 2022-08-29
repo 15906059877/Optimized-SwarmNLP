@@ -727,4 +727,10 @@ namespace SwarmNLP
             if (hBitmap != IntPtr.Zero)
             {
                 Win32.DeleteObject(hBitmap);
-   
+                hBitmap = IntPtr.Zero;
+            }
+        }
+
+        bool NonDominatesPoint(float[] test, float[] best)
+        {
+            // if coordinate is be
