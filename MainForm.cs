@@ -735,4 +735,12 @@ namespace SwarmNLP
         {
             // if coordinate is better than 'best' in at least 1 objective function then it is non-dominating
             for (int i = 0; i < best.Length; i++)
-                if ((Max[i] && test[i] > best[i]) || (!Ma
+                if ((Max[i] && test[i] > best[i]) || (!Max[i] && test[i] < best[i]))
+                    return true;
+
+            return false;
+        }
+
+        bool NonDominatesSet(float[] testCoord, float[] testValue)
+        {
+        
