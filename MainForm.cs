@@ -743,4 +743,10 @@ namespace SwarmNLP
 
         bool NonDominatesSet(float[] testCoord, float[] testValue)
         {
-        
+            bool dominating = false;
+            bool dominated = false;
+            bool equal = true;
+
+            for(int x = 0; x < NonDominatingValues.Count; x++)
+            {
+         
