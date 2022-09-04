@@ -749,4 +749,10 @@ namespace SwarmNLP
 
             for(int x = 0; x < NonDominatingValues.Count; x++)
             {
-         
+                var best = NonDominatingValues[x];
+
+                dominating = false;
+                dominated = false;
+                equal = true;
+
+                for (int i = 0; i < best
