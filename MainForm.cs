@@ -755,4 +755,9 @@ namespace SwarmNLP
                 dominated = false;
                 equal = true;
 
-                for (int i = 0; i < best
+                for (int i = 0; i < best.Length; i++)
+                    if ((Max[i] && testValue[i] >= best[i]) || (!Max[i] && testValue[i] <= best[i]))
+                    {
+                        dominating = true;
+
+              
