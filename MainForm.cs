@@ -760,4 +760,10 @@ namespace SwarmNLP
                     {
                         dominating = true;
 
-              
+                        if (testValue[i] != best[i])
+                            equal = false;
+                    }
+                    else
+                        dominated = true;
+
+                // if totally domina
