@@ -766,4 +766,10 @@ namespace SwarmNLP
                     else
                         dominated = true;
 
-                // if totally domina
+                // if totally dominated, ignore
+                if (dominated && !dominating)
+                    return false;
+
+                // if values are equal then return if coords are equal as well
+                if (equal)
+    
