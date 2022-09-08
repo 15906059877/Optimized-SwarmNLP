@@ -775,4 +775,11 @@ namespace SwarmNLP
                 {
                     var coord = NonDominatingCoords[x];
                     for(int i = 0; i < coord.Length; i++)
-                        if (testCoord[i] != coord[i
+                        if (testCoord[i] != coord[i])
+                        {
+                            equal = false;
+                            break;
+                        }
+
+                    if (equal)
+       
