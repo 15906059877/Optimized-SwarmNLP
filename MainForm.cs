@@ -772,4 +772,7 @@ namespace SwarmNLP
 
                 // if values are equal then return if coords are equal as well
                 if (equal)
-    
+                {
+                    var coord = NonDominatingCoords[x];
+                    for(int i = 0; i < coord.Length; i++)
+                        if (testCoord[i] != coord[i
