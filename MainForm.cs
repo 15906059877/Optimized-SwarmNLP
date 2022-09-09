@@ -782,4 +782,10 @@ namespace SwarmNLP
                         }
 
                     if (equal)
-       
+                        return false;
+                }
+
+                // else if totally dominating, remove the dominated value
+                else if (dominating && !dominated)
+                {
+                  
