@@ -788,4 +788,13 @@ namespace SwarmNLP
                 // else if totally dominating, remove the dominated value
                 else if (dominating && !dominated)
                 {
-                  
+                    NonDominatingValues.RemoveAt(x);
+                    NonDominatingCoords.RemoveAt(x);
+                }
+            }
+
+            // point is good, add to set
+            return true;
+        }
+
+        floa
