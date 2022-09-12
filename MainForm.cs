@@ -797,4 +797,8 @@ namespace SwarmNLP
             return true;
         }
 
-        floa
+        float[] BitmapToGraph(float bmpX, float bmpY, float[] best, float[] mins, float[] maxs)
+        {
+            float[] graph = new float[Config.Dimensions];
+
+            for (int i = 0
