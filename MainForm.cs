@@ -805,4 +805,8 @@ namespace SwarmNLP
                 if (i == xDim)
                     graph[xDim] = mins[xDim] + (maxs[xDim] - mins[xDim]) * bmpX / ImageWidth;
                 else if (i == yDim)
-         
+                    graph[yDim] = mins[yDim] + (maxs[yDim] - mins[yDim]) * (ImageHeight - bmpY) / ImageHeight;
+                else
+                    graph[i] = best[i];
+
+           
