@@ -801,4 +801,8 @@ namespace SwarmNLP
         {
             float[] graph = new float[Config.Dimensions];
 
-            for (int i = 0
+            for (int i = 0; i < Config.Dimensions; i++)
+                if (i == xDim)
+                    graph[xDim] = mins[xDim] + (maxs[xDim] - mins[xDim]) * bmpX / ImageWidth;
+                else if (i == yDim)
+         
