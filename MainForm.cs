@@ -809,4 +809,10 @@ namespace SwarmNLP
                 else
                     graph[i] = best[i];
 
-           
+            return graph;
+        }
+
+        private Point GraphtoWindow(float[] graph)
+        {
+            Point display = new Point();
+            display.X = (int)(MainDisplay.Width * (graph[xDim] - Config
