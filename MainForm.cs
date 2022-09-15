@@ -815,4 +815,5 @@ namespace SwarmNLP
         private Point GraphtoWindow(float[] graph)
         {
             Point display = new Point();
-            display.X = (int)(MainDisplay.Width * (graph[xDim] - Config
+            display.X = (int)(MainDisplay.Width * (graph[xDim] - Config.winMin[xDim]) / (Config.winMax[xDim] - Config.winMin[xDim]));
+            display.Y = (int)(MainDisplay.Height - MainDisplay.Height * (graph[yDim] - Config.winMin[yDim]) / (Config.w
