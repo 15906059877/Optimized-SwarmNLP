@@ -816,4 +816,10 @@ namespace SwarmNLP
         {
             Point display = new Point();
             display.X = (int)(MainDisplay.Width * (graph[xDim] - Config.winMin[xDim]) / (Config.winMax[xDim] - Config.winMin[xDim]));
-            display.Y = (int)(MainDisplay.Height - MainDisplay.Height * (graph[yDim] - Config.winMin[yDim]) / (Config.w
+            display.Y = (int)(MainDisplay.Height - MainDisplay.Height * (graph[yDim] - Config.winMin[yDim]) / (Config.winMax[yDim] - Config.winMin[yDim]));
+            return display;
+        }
+
+        void AddBug()
+        {
+            Particle bug = new Particle(Config.Dimensions, Objec
