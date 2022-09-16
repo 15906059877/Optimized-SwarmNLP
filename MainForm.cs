@@ -829,4 +829,12 @@ namespace SwarmNLP
                 bug.Postion.CopyTo(bug.Best, 0);
 
                 for(int i = 0; i < Objectives.Length; i++)
-                 
+                    bug.BestValue[i] = (float) Objectives[i].Invoke(bug.Postion, Time);
+
+                Bugs.Add(bug);
+            }
+        }
+
+        private bool TryGetFeasible(float[] pos)
+        {
+            float[] empty = new
