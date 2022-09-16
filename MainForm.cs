@@ -822,4 +822,11 @@ namespace SwarmNLP
 
         void AddBug()
         {
-            Particle bug = new Particle(Config.Dimensions, Objec
+            Particle bug = new Particle(Config.Dimensions, Objectives.Length);
+
+            if (TryGetFeasible(bug.Postion))
+            {
+                bug.Postion.CopyTo(bug.Best, 0);
+
+                for(int i = 0; i < Objectives.Length; i++)
+                 
