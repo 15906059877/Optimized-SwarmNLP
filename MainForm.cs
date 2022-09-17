@@ -843,4 +843,10 @@ namespace SwarmNLP
             while (attempts > 0)
             {
                 for(int i = 0; i < Config.Dimensions; i++)
-                    pos[i] = Con
+                    pos[i] = Config.winMin[i] + (Config.winMax[i] - Config.winMin[i]) * (float)RndGen.NextDouble();
+
+                if (IsFeasible(pos, empty))
+                    return true;
+                else
+                    attempts--;
+       
