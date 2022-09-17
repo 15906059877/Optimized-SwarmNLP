@@ -837,4 +837,10 @@ namespace SwarmNLP
 
         private bool TryGetFeasible(float[] pos)
         {
-            float[] empty = new
+            float[] empty = new float[Config.Dimensions];
+
+            int attempts = 100;
+            while (attempts > 0)
+            {
+                for(int i = 0; i < Config.Dimensions; i++)
+                    pos[i] = Con
