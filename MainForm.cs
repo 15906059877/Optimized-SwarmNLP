@@ -858,4 +858,10 @@ namespace SwarmNLP
 
         private bool IsFeasible(float[] x, float[] v)
         {
-            if (TestPos.Length != x.Leng
+            if (TestPos.Length != x.Length)
+                TestPos = new float[x.Length];
+
+            for (int i = 0; i < Config.Dimensions; i++)
+                TestPos[i] = x[i] + v[i];
+
+            if (!((bool)Constraints
