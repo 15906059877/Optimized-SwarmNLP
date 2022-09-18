@@ -849,4 +849,13 @@ namespace SwarmNLP
                     return true;
                 else
                     attempts--;
-       
+            }
+
+            return false;
+        }
+
+        float[] TestPos = new float[2];
+
+        private bool IsFeasible(float[] x, float[] v)
+        {
+            if (TestPos.Length != x.Leng
