@@ -864,4 +864,12 @@ namespace SwarmNLP
             for (int i = 0; i < Config.Dimensions; i++)
                 TestPos[i] = x[i] + v[i];
 
-            if (!((bool)Constraints
+            if (!((bool)Constraints.Invoke(TestPos, Time)))
+                return false;
+
+            return true;
+        }
+
+        internal void PlayButton_Click(object sender, EventArgs e)
+        {
+            Play =
