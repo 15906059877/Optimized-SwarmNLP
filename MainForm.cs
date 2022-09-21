@@ -872,4 +872,11 @@ namespace SwarmNLP
 
         internal void PlayButton_Click(object sender, EventArgs e)
         {
-            Play =
+            Play = !Play;
+            ProcessEvent.Set();
+
+            PlayButton.Text = Play ? "Pause" : "Play";
+            PlayButton.Image = Play ? Resources.Pause : Resources.Play;
+        }
+
+        private void 
