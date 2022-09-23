@@ -879,4 +879,11 @@ namespace SwarmNLP
             PlayButton.Image = Play ? Resources.Pause : Resources.Play;
         }
 
-        private void 
+        private void StopButton_Click(object sender, EventArgs e)
+        {
+            Play = false;
+            Reset = true;
+            SetupSwarm = true;
+            ProcessEvent.Set();
+
+      
