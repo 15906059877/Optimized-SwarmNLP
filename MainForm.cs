@@ -886,4 +886,12 @@ namespace SwarmNLP
             SetupSwarm = true;
             ProcessEvent.Set();
 
-      
+            PlayButton.Text = "Play";
+            PlayButton.Image = Resources.Play; 
+        }
+
+        void StatusBarUpdate()
+        {
+            // Best solutions 555 @ x1=324, x2=23.23, x3=355.34
+
+       
