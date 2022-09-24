@@ -894,4 +894,5 @@ namespace SwarmNLP
         {
             // Best solutions 555 @ x1=324, x2=23.23, x3=355.34
 
-       
+            //string txt = "Best Solution: " + BestGlobalValue.ToString("0.###") + " @ ";
+            string txt = "Optimal: " + BestGlobalValue[Obj].ToString("0.###") + " @ "
