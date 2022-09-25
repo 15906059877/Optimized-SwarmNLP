@@ -900,4 +900,13 @@ namespace SwarmNLP
 
             for (int i = 0; i < Config.Dimensions; i++)
                 //txt += "x" + ((int)(i + 1)).ToString() + " = " + BestGlobal[i].ToString("0.###") + ", ";
-                
+                txt += BestGlobalCoord[i].ToString("0.###") + ", ";
+
+
+            BestLabel.Text = txt.TrimEnd(' ', ',') ;
+
+        }
+
+        private void StepButton_Click(object sender, EventArgs e)
+        {
+  
