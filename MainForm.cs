@@ -918,4 +918,11 @@ namespace SwarmNLP
             Problem.Show(); 
         }
 
-       
+        private void WindowButton_Click(object sender, EventArgs e)
+        {
+            Window.Show();
+        }
+
+        private void SwarmButton_Click(object sender, EventArgs e)
+        {
+            Swarm.
