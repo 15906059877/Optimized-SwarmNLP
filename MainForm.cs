@@ -909,4 +909,13 @@ namespace SwarmNLP
 
         private void StepButton_Click(object sender, EventArgs e)
         {
-  
+            Step = true;
+            ProcessEvent.Set();
+        }
+
+        private void ProblemButton_Click(object sender, EventArgs e)
+        {
+            Problem.Show(); 
+        }
+
+       
