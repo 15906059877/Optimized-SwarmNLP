@@ -925,4 +925,10 @@ namespace SwarmNLP
 
         private void SwarmButton_Click(object sender, EventArgs e)
         {
-            Swarm.
+            Swarm.Show();
+        }
+
+        private void xAxisCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            xDim = xAxisCombo.SelectedIndex;
+            RefreshEvent.Set();
