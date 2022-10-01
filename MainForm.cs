@@ -940,4 +940,8 @@ namespace SwarmNLP
             RefreshEvent.Set();
         }
 
-     
+        private void ObjCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Obj = ObjCombo.SelectedIndex;
+            RefreshEvent.Set();
+   
