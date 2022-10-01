@@ -932,3 +932,12 @@ namespace SwarmNLP
         {
             xDim = xAxisCombo.SelectedIndex;
             RefreshEvent.Set();
+        }
+
+        private void yAxisCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            yDim = yAxisCombo.SelectedIndex;
+            RefreshEvent.Set();
+        }
+
+     
