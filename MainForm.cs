@@ -944,4 +944,11 @@ namespace SwarmNLP
         {
             Obj = ObjCombo.SelectedIndex;
             RefreshEvent.Set();
-   
+        }
+
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            RefreshEvent.Set();
+        }
+
+        private void MainDisplay_MouseMove(object s
