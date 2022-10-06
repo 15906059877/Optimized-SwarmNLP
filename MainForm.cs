@@ -951,4 +951,10 @@ namespace SwarmNLP
             RefreshEvent.Set();
         }
 
-        private void MainDisplay_MouseMove(object s
+        private void MainDisplay_MouseMove(object sender, MouseEventArgs e)
+        {
+            float[] pos = BitmapToGraph(e.X, e.Y, BestGlobalCoord, Config.winMin, Config.winMax);
+
+            float result = (float)Objectives[Obj].Invoke(pos, Time);
+
+            string t
