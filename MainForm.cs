@@ -961,4 +961,12 @@ namespace SwarmNLP
 
 
             for (int i = 0; i < Config.Dimensions; i++)
-                //txt += "x" + ((int)(i + 1)).ToString() + " = " + BestGlobal[i].ToString("0.##
+                //txt += "x" + ((int)(i + 1)).ToString() + " = " + BestGlobal[i].ToString("0.###") + ", ";
+                txt += pos[i].ToString("0.###") + ", ";
+
+
+            CursorLabel.Text = txt.TrimEnd(' ', ',') ;
+
+        }
+
+        private void SaveButton_Click(object send
