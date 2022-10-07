@@ -957,4 +957,8 @@ namespace SwarmNLP
 
             float result = (float)Objectives[Obj].Invoke(pos, Time);
 
-            string t
+            string txt = "Cursor: " + result.ToString("0.###") + " @ ";
+
+
+            for (int i = 0; i < Config.Dimensions; i++)
+                //txt += "x" + ((int)(i + 1)).ToString() + " = " + BestGlobal[i].ToString("0.##
