@@ -969,4 +969,12 @@ namespace SwarmNLP
 
         }
 
-        private void SaveButton_Click(object send
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog save = new SaveFileDialog();
+
+                save.FileName = "MySwarm1";
+                save.Title = "Save Setup";
+              
