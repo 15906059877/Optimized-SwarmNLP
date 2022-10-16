@@ -977,4 +977,8 @@ namespace SwarmNLP
 
                 save.FileName = "MySwarm1";
                 save.Title = "Save Setup";
-              
+                save.Filter = "Swarm File|*.swm";
+
+                if (save.ShowDialog() == DialogResult.OK)
+                {
+                    FileStream f = new FileStream(save.FileName, FileMode.Create, FileAccess.Write
