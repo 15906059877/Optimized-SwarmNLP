@@ -981,4 +981,11 @@ namespace SwarmNLP
 
                 if (save.ShowDialog() == DialogResult.OK)
                 {
-                    FileStream f = new FileStream(save.FileName, FileMode.Create, FileAccess.Write
+                    FileStream f = new FileStream(save.FileName, FileMode.Create, FileAccess.Write);
+                    BinaryFormatter b = new BinaryFormatter();
+                    b.Serialize(f, Config);
+                    f.Close();
+                }
+            }
+            catch (Exception ex)
+        
