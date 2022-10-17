@@ -1002,4 +1002,11 @@ namespace SwarmNLP
                 open.Title = "Open Setup";
                 open.Filter = "Swarm File|*.swm";
 
-                if (open.ShowDialog() == DialogRes
+                if (open.ShowDialog() == DialogResult.OK)
+                {
+                    FreezeRefresh = true;
+
+                    if (Play)
+                    {
+                        PlayButton_Click(null, null);
+                   
