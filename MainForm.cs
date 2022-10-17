@@ -988,4 +988,13 @@ namespace SwarmNLP
                 }
             }
             catch (Exception ex)
-        
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void OpenButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDi
