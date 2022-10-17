@@ -997,4 +997,9 @@ namespace SwarmNLP
         {
             try
             {
-                OpenFileDi
+                OpenFileDialog open = new OpenFileDialog();
+
+                open.Title = "Open Setup";
+                open.Filter = "Swarm File|*.swm";
+
+                if (open.ShowDialog() == DialogRes
