@@ -1009,4 +1009,8 @@ namespace SwarmNLP
                     if (Play)
                     {
                         PlayButton_Click(null, null);
-                   
+                        Thread.Sleep(500);
+                    }
+
+                    FileStream f = new FileStream(open.FileName, FileMode.Open, FileAccess.Read);
+                    BinaryFormatter b = new Binary
