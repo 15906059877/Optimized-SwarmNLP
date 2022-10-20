@@ -1013,4 +1013,9 @@ namespace SwarmNLP
                     }
 
                     FileStream f = new FileStream(open.FileName, FileMode.Open, FileAccess.Read);
-                    BinaryFormatter b = new Binary
+                    BinaryFormatter b = new BinaryFormatter();
+                    Config = (Setup)b.Deserialize(f);
+                    f.Close();
+
+                    Config.FixLegacy();
+                    Compi
