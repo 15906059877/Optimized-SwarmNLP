@@ -1018,4 +1018,9 @@ namespace SwarmNLP
                     f.Close();
 
                     Config.FixLegacy();
-                    Compi
+                    CompileProblem();
+                    ResetDimensions(Config.FunctionEqs.Count);
+                    RefreshAxisCombos();
+
+                    Problem.ResetView();
+                    Window.Res
