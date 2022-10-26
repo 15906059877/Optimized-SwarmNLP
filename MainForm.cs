@@ -1030,4 +1030,13 @@ namespace SwarmNLP
                     SetupSwarm = true;
                     FreezeRefresh = false;
 
-                    ProcessEvent.Set
+                    ProcessEvent.Set();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        internal void ResetDimensions(i
