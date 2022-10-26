@@ -1039,4 +1039,8 @@ namespace SwarmNLP
             }
         }
 
-        internal void ResetDimensions(i
+        internal void ResetDimensions(int objectives)
+        {
+            ResetVect(ref Config.winMin, Config.Dimensions, -10);
+            ResetVect(ref Config.winMax, Config.Dimensions, 10);
+            ResetVect(ref BestGlobalCoord, Config.Dimensions, 0);
