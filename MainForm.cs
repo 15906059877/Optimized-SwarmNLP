@@ -1023,4 +1023,11 @@ namespace SwarmNLP
                     RefreshAxisCombos();
 
                     Problem.ResetView();
-                    Window.Res
+                    Window.ResetView();
+                    Swarm.ResetView();
+
+                    Reset = true;
+                    SetupSwarm = true;
+                    FreezeRefresh = false;
+
+                    ProcessEvent.Set
