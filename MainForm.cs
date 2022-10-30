@@ -1044,3 +1044,9 @@ namespace SwarmNLP
             ResetVect(ref Config.winMin, Config.Dimensions, -10);
             ResetVect(ref Config.winMax, Config.Dimensions, 10);
             ResetVect(ref BestGlobalCoord, Config.Dimensions, 0);
+
+            ResetVect(ref BestGlobalValue, objectives, 0);
+
+            foreach (Particle bug in Bugs)
+            {
+                ResetVect(ref bug.Postion, Config.Dime
