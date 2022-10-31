@@ -1049,4 +1049,8 @@ namespace SwarmNLP
 
             foreach (Particle bug in Bugs)
             {
-                ResetVect(ref bug.Postion, Config.Dime
+                ResetVect(ref bug.Postion, Config.Dimensions, 0);
+                ResetVect(ref bug.Velocity, Config.Dimensions, 0);
+                ResetVect(ref bug.Best, Config.Dimensions, 0);
+                ResetVect(ref bug.BestValue, objectives, 0);
+           
