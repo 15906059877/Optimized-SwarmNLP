@@ -1066,4 +1066,18 @@ namespace SwarmNLP
                 else
                     newVect[i] = defaultVal;
 
-         
+            vect = newVect;
+        }
+
+
+
+
+    }
+
+    internal class Particle
+    {
+        internal float[] Postion;
+        internal float[] TestV;
+        internal float[] Velocity;
+
+        
