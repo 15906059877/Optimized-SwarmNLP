@@ -1061,4 +1061,9 @@ namespace SwarmNLP
             float[] newVect = new float[dims];
 
             for (int i = 0; i < dims; i++)
- 
+                if (i < vect.Length)
+                    newVect[i] = vect[i];
+                else
+                    newVect[i] = defaultVal;
+
+         
