@@ -1053,4 +1053,12 @@ namespace SwarmNLP
                 ResetVect(ref bug.Velocity, Config.Dimensions, 0);
                 ResetVect(ref bug.Best, Config.Dimensions, 0);
                 ResetVect(ref bug.BestValue, objectives, 0);
-           
+            }
+        }
+
+        private void ResetVect(ref float[] vect, int dims, int defaultVal)
+        {
+            float[] newVect = new float[dims];
+
+            for (int i = 0; i < dims; i++)
+ 
