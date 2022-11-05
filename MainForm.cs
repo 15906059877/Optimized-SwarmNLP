@@ -1080,4 +1080,11 @@ namespace SwarmNLP
         internal float[] TestV;
         internal float[] Velocity;
 
-        
+        internal float[] BestValue;
+        internal float[] Best;
+
+        internal bool MoveNext;
+
+        internal Particle(int dims, int objs)
+        {
+            Postion =
