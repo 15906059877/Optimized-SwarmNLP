@@ -1087,4 +1087,14 @@ namespace SwarmNLP
 
         internal Particle(int dims, int objs)
         {
-            Postion =
+            Postion = new float[dims];
+            TestV = new float[dims];
+            Velocity = new float[dims];
+            Best = new float[dims];
+
+            BestValue = new float[objs];
+        }
+    }
+
+}
+
