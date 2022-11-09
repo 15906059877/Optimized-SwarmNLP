@@ -10,4 +10,11 @@ using Evaluator;
 
 namespace SwarmNLP
 {
-    public partial class InputFunction 
+    public partial class InputFunction : Form
+    {
+        MainForm Main;
+        int Dims;
+        bool SetFunction;
+        internal MethodResults ResultFunction;
+
+        public InputFunction(MainForm 
