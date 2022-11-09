@@ -42,4 +42,13 @@ namespace SwarmNLP
                     FunctionBox.Text = function.Substring(10);
             }
             else
-                FunctionBox.Text = 
+                FunctionBox.Text = function;
+
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void OkButton_Click(object sender, Eve
