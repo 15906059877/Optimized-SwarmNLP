@@ -32,4 +32,8 @@ namespace SwarmNLP
 
             if (setFunction)
             {
-            
+                //"Minimize: adfadsfasdf"
+                if(function.StartsWith("Minimize"))
+                    MinRadio.Checked = true;
+                else
+                    MaxR
