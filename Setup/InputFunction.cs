@@ -23,4 +23,13 @@ namespace SwarmNLP
 
             Main = main;
             Dims = dims;
-            SetFunction = setF
+            SetFunction = setFunction;
+
+            Text = setFunction ? "Set Function" : "Set Constraint";
+
+            MinRadio.Visible = setFunction;
+            MaxRadio.Visible = setFunction;
+
+            if (setFunction)
+            {
+            
