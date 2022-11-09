@@ -36,4 +36,10 @@ namespace SwarmNLP
                 if(function.StartsWith("Minimize"))
                     MinRadio.Checked = true;
                 else
-                    MaxR
+                    MaxRadio.Checked = true;
+
+                if(function.Length > 10)
+                    FunctionBox.Text = function.Substring(10);
+            }
+            else
+                FunctionBox.Text = 
