@@ -17,4 +17,10 @@ namespace SwarmNLP
         bool SetFunction;
         internal MethodResults ResultFunction;
 
-        public InputFunction(MainForm 
+        public InputFunction(MainForm main, int dims, bool setFunction, string function)
+        {
+            InitializeComponent();
+
+            Main = main;
+            Dims = dims;
+            SetFunction = setF
