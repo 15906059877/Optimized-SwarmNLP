@@ -51,4 +51,8 @@ namespace SwarmNLP
             Close();
         }
 
-        private void OkButton_Click(object sender, Eve
+        private void OkButton_Click(object sender, EventArgs e)
+        {
+            ResultFunction = SetFunction ? Main.CompileFunction(FunctionBox.Text, Dims) : Main.CompileConstraint(FunctionBox.Text, Dims);
+
+     
