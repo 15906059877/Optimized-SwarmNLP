@@ -55,4 +55,16 @@ namespace SwarmNLP
         {
             ResultFunction = SetFunction ? Main.CompileFunction(FunctionBox.Text, Dims) : Main.CompileConstraint(FunctionBox.Text, Dims);
 
-     
+            if (ResultFunction == null)
+                return;
+
+            Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public string GetFunctionText()
+        
