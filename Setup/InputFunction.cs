@@ -74,3 +74,8 @@ namespace SwarmNLP
                 text = "Minimize: " + text;
             else
                 text = "Maximize: " + text;
+
+            return text;
+        }
+    }
+}
