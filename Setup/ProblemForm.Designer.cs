@@ -164,3 +164,143 @@ namespace SwarmNLP
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.Location = new System.Drawing.Point(12, 38);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.label4);
+            this.splitContainer1.Panel1.Controls.Add(this.EditFunctionLink);
+            this.splitContainer1.Panel1.Controls.Add(this.AddFunctionLink);
+            this.splitContainer1.Panel1.Controls.Add(this.FunctionList);
+            this.splitContainer1.Panel1.Controls.Add(this.RemoveFunctionLink);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.label3);
+            this.splitContainer1.Panel2.Controls.Add(this.EditConstraintLink);
+            this.splitContainer1.Panel2.Controls.Add(this.ConstraintsList);
+            this.splitContainer1.Panel2.Controls.Add(this.RemoveConstraintLink);
+            this.splitContainer1.Panel2.Controls.Add(this.AddConstraintLink);
+            this.splitContainer1.Size = new System.Drawing.Size(373, 236);
+            this.splitContainer1.SplitterDistance = 114;
+            this.splitContainer1.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Objectives:";
+            // 
+            // EditFunctionLink
+            // 
+            this.EditFunctionLink.AutoSize = true;
+            this.EditFunctionLink.Location = new System.Drawing.Point(102, 10);
+            this.EditFunctionLink.Name = "EditFunctionLink";
+            this.EditFunctionLink.Size = new System.Drawing.Size(25, 13);
+            this.EditFunctionLink.TabIndex = 21;
+            this.EditFunctionLink.TabStop = true;
+            this.EditFunctionLink.Text = "Edit";
+            this.EditFunctionLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.EditFunctionLink_LinkClicked);
+            // 
+            // AddFunctionLink
+            // 
+            this.AddFunctionLink.AutoSize = true;
+            this.AddFunctionLink.Location = new System.Drawing.Point(70, 10);
+            this.AddFunctionLink.Name = "AddFunctionLink";
+            this.AddFunctionLink.Size = new System.Drawing.Size(26, 13);
+            this.AddFunctionLink.TabIndex = 20;
+            this.AddFunctionLink.TabStop = true;
+            this.AddFunctionLink.Text = "Add";
+            this.AddFunctionLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.AddFunctionLink_LinkClicked);
+            // 
+            // FunctionList
+            // 
+            this.FunctionList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.FunctionList.FormattingEnabled = true;
+            this.FunctionList.IntegralHeight = false;
+            this.FunctionList.Location = new System.Drawing.Point(6, 26);
+            this.FunctionList.Name = "FunctionList";
+            this.FunctionList.Size = new System.Drawing.Size(364, 85);
+            this.FunctionList.TabIndex = 18;
+            this.FunctionList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.FunctionList_MouseDoubleClick);
+            // 
+            // RemoveFunctionLink
+            // 
+            this.RemoveFunctionLink.AutoSize = true;
+            this.RemoveFunctionLink.Location = new System.Drawing.Point(133, 10);
+            this.RemoveFunctionLink.Name = "RemoveFunctionLink";
+            this.RemoveFunctionLink.Size = new System.Drawing.Size(92, 13);
+            this.RemoveFunctionLink.TabIndex = 19;
+            this.RemoveFunctionLink.TabStop = true;
+            this.RemoveFunctionLink.Text = "Remove Selected";
+            this.RemoveFunctionLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.RemoveFunctionLink_LinkClicked);
+            // 
+            // TimeCheckBox
+            // 
+            this.TimeCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.TimeCheckBox.AutoSize = true;
+            this.TimeCheckBox.Location = new System.Drawing.Point(18, 289);
+            this.TimeCheckBox.Name = "TimeCheckBox";
+            this.TimeCheckBox.Size = new System.Drawing.Size(202, 17);
+            this.TimeCheckBox.TabIndex = 18;
+            this.TimeCheckBox.Text = "Time var t used in objective functions";
+            this.TimeCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // ProblemForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(397, 372);
+            this.Controls.Add(this.TimeCheckBox);
+            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.TimeBox);
+            this.Controls.Add(this.TimeLabel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DimensionBox);
+            this.Controls.Add(this.SetButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ProblemForm";
+            this.Text = "Problem";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProblemForm_FormClosing);
+            this.Load += new System.EventHandler(this.ProblemForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DimensionBox)).EndInit();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
+            this.splitContainer1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button SetButton;
+        private System.Windows.Forms.NumericUpDown DimensionBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox ConstraintsList;
+        private System.Windows.Forms.LinkLabel RemoveConstraintLink;
+        private System.Windows.Forms.LinkLabel AddConstraintLink;
+        private System.Windows.Forms.Label TimeLabel;
+        private System.Windows.Forms.TextBox TimeBox;
+        private System.Windows.Forms.LinkLabel EditConstraintLink;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.LinkLabel EditFunctionLink;
+        private System.Windows.Forms.LinkLabel AddFunctionLink;
+        private System.Windows.Forms.ListBox FunctionList;
+        private System.Windows.Forms.LinkLabel RemoveFunctionLink;
+        private System.Windows.Forms.CheckBox TimeCheckBox;
+    }
+}
