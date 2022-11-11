@@ -67,4 +67,10 @@ namespace SwarmNLP
         }
 
         public string GetFunctionText()
-        
+        {
+            string text = FunctionBox.Text;
+
+            if (MinRadio.Checked)
+                text = "Minimize: " + text;
+            else
+                text = "Maximize: " + text;
