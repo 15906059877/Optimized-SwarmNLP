@@ -89,4 +89,8 @@
               </xsd:sequence>
               <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attr
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name
