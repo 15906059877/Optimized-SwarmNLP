@@ -24,4 +24,8 @@ namespace SwarmNLP
 
         /// <summary>
         /// Required method for Designer support - do not modify
-        /// the contents of this method with the c
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.Componen
