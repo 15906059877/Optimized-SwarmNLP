@@ -30,4 +30,7 @@ namespace SwarmNLP
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SwarmForm));
             this.SetButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.L
+            this.label1 = new System.Windows.Forms.Label();
+            this.SizeBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.L
