@@ -33,4 +33,7 @@ namespace SwarmNLP
             this.label1 = new System.Windows.Forms.Label();
             this.SizeBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.L
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.InertiaBox = new System.Windows.Forms.TextBox();
+            this.GlobalBox = new System.Windows.Forms.Tex
