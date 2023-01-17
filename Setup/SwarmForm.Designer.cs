@@ -42,4 +42,7 @@ namespace SwarmNLP
             this.FlyBox = new System.Windows.Forms.NumericUpDown();
             this.Repulse = new System.Windows.Forms.CheckBox();
             this.BugSizeBox = new System.Windows.Forms.TextBox();
-            this.label6
+            this.label6 = new System.Windows.Forms.Label();
+            this.SolutionsKeptBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.Comp
