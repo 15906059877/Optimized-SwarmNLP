@@ -45,4 +45,9 @@ namespace SwarmNLP
             this.label6 = new System.Windows.Forms.Label();
             this.SolutionsKeptBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            ((System.Comp
+            ((System.ComponentModel.ISupportInitialize)(this.FlyBox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // SetButton
+            // 
+            this.SetButton.Anchor = ((Sy
