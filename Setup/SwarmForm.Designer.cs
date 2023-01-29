@@ -55,4 +55,8 @@ namespace SwarmNLP
             this.SetButton.Name = "SetButton";
             this.SetButton.Size = new System.Drawing.Size(75, 23);
             this.SetButton.TabIndex = 0;
-            this.SetButton.Te
+            this.SetButton.Text = "Set";
+            this.SetButton.UseVisualStyleBackColor = true;
+            this.SetButton.Click += new System.EventHandler(this.SetButton_Click);
+            // 
+          
