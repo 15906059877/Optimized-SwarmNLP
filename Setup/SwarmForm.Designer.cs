@@ -71,4 +71,10 @@ namespace SwarmNLP
             // 
             // SizeBox
             // 
-            this.SizeBox.Location = new System.Drawing.Poi
+            this.SizeBox.Location = new System.Drawing.Point(80, 12);
+            this.SizeBox.Name = "SizeBox";
+            this.SizeBox.Size = new System.Drawing.Size(44, 20);
+            this.SizeBox.TabIndex = 2;
+            // 
+            // label2
+          
