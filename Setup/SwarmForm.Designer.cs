@@ -77,4 +77,6 @@ namespace SwarmNLP
             this.SizeBox.TabIndex = 2;
             // 
             // label2
-          
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.Gr
