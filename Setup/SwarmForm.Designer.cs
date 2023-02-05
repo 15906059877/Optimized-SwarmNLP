@@ -83,4 +83,10 @@ namespace SwarmNLP
             this.label2.Location = new System.Drawing.Point(13, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 13);
-         
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Global Optimal Influence";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.
