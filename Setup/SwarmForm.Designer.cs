@@ -107,3 +107,7 @@ namespace SwarmNLP
             this.label4.Text = "Personal Optimal Influence";
             // 
             // InertiaBox
+            // 
+            this.InertiaBox.Location = new System.Drawing.Point(80, 38);
+            this.InertiaBox.Name = "InertiaBox";
+            this.InertiaBox.Size = new System.Drawi
