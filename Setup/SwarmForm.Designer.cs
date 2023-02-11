@@ -110,4 +110,10 @@ namespace SwarmNLP
             // 
             this.InertiaBox.Location = new System.Drawing.Point(80, 38);
             this.InertiaBox.Name = "InertiaBox";
-            this.InertiaBox.Size = new System.Drawi
+            this.InertiaBox.Size = new System.Drawing.Size(44, 20);
+            this.InertiaBox.TabIndex = 5;
+            // 
+            // GlobalBox
+            // 
+            this.GlobalBox.Location = new System.Drawing.Point(152, 73);
+            this.GlobalB
