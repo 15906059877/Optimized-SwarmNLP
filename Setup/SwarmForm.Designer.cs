@@ -116,4 +116,10 @@ namespace SwarmNLP
             // GlobalBox
             // 
             this.GlobalBox.Location = new System.Drawing.Point(152, 73);
-            this.GlobalB
+            this.GlobalBox.Name = "GlobalBox";
+            this.GlobalBox.Size = new System.Drawing.Size(44, 20);
+            this.GlobalBox.TabIndex = 7;
+            // 
+            // PersonalBox
+            // 
+     
