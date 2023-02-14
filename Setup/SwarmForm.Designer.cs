@@ -122,4 +122,7 @@ namespace SwarmNLP
             // 
             // PersonalBox
             // 
-     
+            this.PersonalBox.Location = new System.Drawing.Point(152, 100);
+            this.PersonalBox.Name = "PersonalBox";
+            this.PersonalBox.Size = new System.Drawing.Size(44, 20);
+    
