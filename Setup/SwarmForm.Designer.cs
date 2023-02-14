@@ -125,4 +125,9 @@ namespace SwarmNLP
             this.PersonalBox.Location = new System.Drawing.Point(152, 100);
             this.PersonalBox.Name = "PersonalBox";
             this.PersonalBox.Size = new System.Drawing.Size(44, 20);
-    
+            this.PersonalBox.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Mic
