@@ -135,4 +135,9 @@ namespace SwarmNLP
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(200, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Time part
+            this.label5.Text = "Time particle flys before changing course";
+            // 
+            // FlyBox
+            // 
+            this.FlyBox.Location = new System.Drawing.Point(219, 159);
+            this.FlyBox.Maximum = 
