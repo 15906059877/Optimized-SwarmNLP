@@ -131,4 +131,8 @@ namespace SwarmNLP
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1
+            this.label5.Location = new System.Drawing.Point(13, 161);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(200, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Time part
