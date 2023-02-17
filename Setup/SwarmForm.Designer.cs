@@ -140,4 +140,11 @@ namespace SwarmNLP
             // FlyBox
             // 
             this.FlyBox.Location = new System.Drawing.Point(219, 159);
-            this.FlyBox.Maximum = 
+            this.FlyBox.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.FlyBox.Name = "FlyBox";
+            this.FlyBox.Size = new System.Drawing.Size(46, 20);
+         
