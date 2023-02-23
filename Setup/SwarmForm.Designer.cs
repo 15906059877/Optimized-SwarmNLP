@@ -147,4 +147,9 @@ namespace SwarmNLP
             0});
             this.FlyBox.Name = "FlyBox";
             this.FlyBox.Size = new System.Drawing.Size(46, 20);
-         
+            this.FlyBox.TabIndex = 10;
+            // 
+            // Repulse
+            // 
+            this.Repulse.AutoSize = true;
+            this.Repulse.Font = new System.Drawing.Fon
