@@ -153,4 +153,8 @@ namespace SwarmNLP
             // 
             this.Repulse.AutoSize = true;
             this.Repulse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Repulse.Location = new System.Drawing.Point(
+            this.Repulse.Location = new System.Drawing.Point(16, 126);
+            this.Repulse.Name = "Repulse";
+            this.Repulse.Size = new System.Drawing.Size(225, 17);
+            this.Repulse.TabIndex = 11;
+            this.Repulse.Text = "Repu
