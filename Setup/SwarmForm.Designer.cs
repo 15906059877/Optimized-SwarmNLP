@@ -162,4 +162,7 @@ namespace SwarmNLP
             // 
             // BugSizeBox
             // 
-            this.BugSizeBox.
+            this.BugSizeBox.Location = new System.Drawing.Point(68, 189);
+            this.BugSizeBox.Name = "BugSizeBox";
+            this.BugSizeBox.Size = new System.Drawing.Size(44, 20);
+            this.BugSizeBox.TabIndex = 
