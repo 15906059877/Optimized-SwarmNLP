@@ -157,4 +157,9 @@ namespace SwarmNLP
             this.Repulse.Name = "Repulse";
             this.Repulse.Size = new System.Drawing.Size(225, 17);
             this.Repulse.TabIndex = 11;
-            this.Repulse.Text = "Repu
+            this.Repulse.Text = "Repulsion - helps keep particles distanced";
+            this.Repulse.UseVisualStyleBackColor = true;
+            // 
+            // BugSizeBox
+            // 
+            this.BugSizeBox.
