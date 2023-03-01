@@ -175,4 +175,9 @@ namespace SwarmNLP
             this.label6.Location = new System.Drawing.Point(13, 192);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
-          
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Bug Size";
+            // 
+            // SolutionsKeptBox
+            // 
+            this.SolutionsKeptBox.Lo
