@@ -193,4 +193,9 @@ namespace SwarmNLP
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(129, 13);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Max # of soluti
+            this.label7.Text = "Max # of solutions to kept";
+            // 
+            // SwarmForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms
