@@ -180,4 +180,7 @@ namespace SwarmNLP
             // 
             // SolutionsKeptBox
             // 
-            this.SolutionsKeptBox.Lo
+            this.SolutionsKeptBox.Location = new System.Drawing.Point(147, 220);
+            this.SolutionsKeptBox.Name = "SolutionsKeptBox";
+            this.SolutionsKeptBox.Size = new System.Drawing.Size(44, 20);
+        
