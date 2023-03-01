@@ -183,4 +183,9 @@ namespace SwarmNLP
             this.SolutionsKeptBox.Location = new System.Drawing.Point(147, 220);
             this.SolutionsKeptBox.Name = "SolutionsKeptBox";
             this.SolutionsKeptBox.Size = new System.Drawing.Size(44, 20);
-        
+            this.SolutionsKeptBox.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans S
