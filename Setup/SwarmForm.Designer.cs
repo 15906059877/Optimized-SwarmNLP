@@ -165,4 +165,9 @@ namespace SwarmNLP
             this.BugSizeBox.Location = new System.Drawing.Point(68, 189);
             this.BugSizeBox.Name = "BugSizeBox";
             this.BugSizeBox.Size = new System.Drawing.Size(44, 20);
-            this.BugSizeBox.TabIndex = 
+            this.BugSizeBox.TabIndex = 13;
+            this.BugSizeBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.Auto
