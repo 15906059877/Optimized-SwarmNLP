@@ -201,4 +201,8 @@ namespace SwarmNLP
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(300, 300);
-            this.Controls.Add(this.S
+            this.Controls.Add(this.SolutionsKeptBox);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.BugSizeBox);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this
