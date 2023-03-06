@@ -205,4 +205,8 @@ namespace SwarmNLP
             this.Controls.Add(this.label7);
             this.Controls.Add(this.BugSizeBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this
+            this.Controls.Add(this.Repulse);
+            this.Controls.Add(this.FlyBox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.PersonalBox);
+            th
