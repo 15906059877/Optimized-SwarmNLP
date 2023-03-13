@@ -209,4 +209,8 @@ namespace SwarmNLP
             this.Controls.Add(this.FlyBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.PersonalBox);
-            th
+            this.Controls.Add(this.GlobalBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.InertiaBox);
+            this.Controls.Add(this.label3);
+            thi
