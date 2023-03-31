@@ -217,4 +217,7 @@ namespace SwarmNLP
             this.Controls.Add(this.SizeBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SetButton);
-            t
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+      
