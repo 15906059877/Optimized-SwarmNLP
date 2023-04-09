@@ -220,4 +220,7 @@ namespace SwarmNLP
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-      
+            this.Name = "SwarmForm";
+            this.Text = "Swarm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SwarmForm_FormClosing);
+            t
