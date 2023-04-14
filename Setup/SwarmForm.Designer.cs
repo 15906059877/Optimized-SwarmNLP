@@ -234,4 +234,7 @@ namespace SwarmNLP
 
         private System.Windows.Forms.Button SetButton;
         private System.Windows.Forms.Label label1;
-     
+        private System.Windows.Forms.TextBox SizeBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.L
