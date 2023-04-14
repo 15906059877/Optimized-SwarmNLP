@@ -226,4 +226,12 @@ namespace SwarmNLP
             this.Load += new System.EventHandler(this.SwarmForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.FlyBox)).EndInit();
             this.ResumeLayout(false);
-   
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button SetButton;
+        private System.Windows.Forms.Label label1;
+     
