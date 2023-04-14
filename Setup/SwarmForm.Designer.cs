@@ -223,4 +223,7 @@ namespace SwarmNLP
             this.Name = "SwarmForm";
             this.Text = "Swarm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SwarmForm_FormClosing);
-            t
+            this.Load += new System.EventHandler(this.SwarmForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.FlyBox)).EndInit();
+            this.ResumeLayout(false);
+   
