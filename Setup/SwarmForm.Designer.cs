@@ -247,4 +247,6 @@ namespace SwarmNLP
         private System.Windows.Forms.TextBox BugSizeBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox SolutionsKeptBox;
-        private System.Windows.Forms.Label la
+        private System.Windows.Forms.Label label7;
+    }
+}
