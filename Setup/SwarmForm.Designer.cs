@@ -237,4 +237,7 @@ namespace SwarmNLP
         private System.Windows.Forms.TextBox SizeBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.L
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox InertiaBox;
+        private System.Windows.Forms.TextBox GlobalBox;
+        private System.Windows.Form
