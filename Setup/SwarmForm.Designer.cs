@@ -240,4 +240,8 @@ namespace SwarmNLP
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox InertiaBox;
         private System.Windows.Forms.TextBox GlobalBox;
-        private System.Windows.Form
+        private System.Windows.Forms.TextBox PersonalBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.NumericUpDown FlyBox;
+        private System.Windows.Forms.CheckBox Repulse;
+        private Syste
