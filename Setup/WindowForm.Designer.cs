@@ -4,4 +4,10 @@ namespace SwarmNLP
     {
         /// <summary>
         /// Required designer variable.
-        /// </summar
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <par
