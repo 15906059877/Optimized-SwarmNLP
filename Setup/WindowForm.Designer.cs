@@ -35,4 +35,7 @@ namespace SwarmNLP
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.MinBox = new Syst
+            this.MinBox = new System.Windows.Forms.TextBox();
+            this.MaxBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ScaleBox = new System.Windows.Forms.T
