@@ -38,4 +38,10 @@ namespace SwarmNLP
             this.MinBox = new System.Windows.Forms.TextBox();
             this.MaxBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.ScaleBox = new System.Windows.Forms.T
+            this.ScaleBox = new System.Windows.Forms.TextBox();
+            this.SetButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // RangeList
+            // 
+            this.RangeList
