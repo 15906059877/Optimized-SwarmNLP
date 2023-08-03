@@ -44,4 +44,5 @@ namespace SwarmNLP
             // 
             // RangeList
             // 
-            this.RangeList
+            this.RangeList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.Anch
