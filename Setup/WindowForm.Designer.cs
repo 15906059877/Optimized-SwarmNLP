@@ -52,4 +52,7 @@ namespace SwarmNLP
             this.columnHeader2,
             this.columnHeader3});
             this.RangeList.FullRowSelect = true;
-            this.RangeList.HeaderStyle =
+            this.RangeList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.RangeList.HideSelection = false;
+            this.RangeList.Location = new System.Drawing.Point(12, 12);
+            this.
