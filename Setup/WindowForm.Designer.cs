@@ -58,4 +58,7 @@ namespace SwarmNLP
             this.RangeList.MultiSelect = false;
             this.RangeList.Name = "RangeList";
             this.RangeList.Size = new System.Drawing.Size(225, 141);
-            this.RangeList.TabIndex
+            this.RangeList.TabIndex = 0;
+            this.RangeList.UseCompatibleStateImageBehavior = false;
+            this.RangeList.View = System.Windows.Forms.View.Details;
+            this.RangeList.SelectedIndexChanged += new Syst
