@@ -47,4 +47,9 @@ namespace SwarmNLP
             this.RangeList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.RangeList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] 
+            this.RangeList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.RangeList.FullRowSelect = true;
+            this.RangeList.HeaderStyle =
