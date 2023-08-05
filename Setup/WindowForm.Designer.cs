@@ -55,4 +55,7 @@ namespace SwarmNLP
             this.RangeList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.RangeList.HideSelection = false;
             this.RangeList.Location = new System.Drawing.Point(12, 12);
-            this.
+            this.RangeList.MultiSelect = false;
+            this.RangeList.Name = "RangeList";
+            this.RangeList.Size = new System.Drawing.Size(225, 141);
+            this.RangeList.TabIndex
