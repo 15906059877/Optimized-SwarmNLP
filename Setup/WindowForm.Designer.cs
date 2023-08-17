@@ -61,4 +61,9 @@ namespace SwarmNLP
             this.RangeList.TabIndex = 0;
             this.RangeList.UseCompatibleStateImageBehavior = false;
             this.RangeList.View = System.Windows.Forms.View.Details;
-            this.RangeList.SelectedIndexChanged += new Syst
+            this.RangeList.SelectedIndexChanged += new System.EventHandler(this.RangeList_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Dimension";
+            this.column
