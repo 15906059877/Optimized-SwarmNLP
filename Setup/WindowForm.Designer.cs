@@ -79,4 +79,6 @@ namespace SwarmNLP
             // 
             // label1
             // 
-            this.label1.Anc
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.la
