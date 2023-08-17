@@ -73,4 +73,10 @@ namespace SwarmNLP
             this.columnHeader2.Text = "Min";
             this.columnHeader2.Width = 61;
             // 
-            // colu
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Max";
+            // 
+            // label1
+            // 
+            this.label1.Anc
