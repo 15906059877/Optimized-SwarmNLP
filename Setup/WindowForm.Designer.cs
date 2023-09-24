@@ -96,4 +96,8 @@ namespace SwarmNLP
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Max";
-    
+            // 
+            // MinBox
+            // 
+            this.MinBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+ 
