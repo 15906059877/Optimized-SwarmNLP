@@ -100,4 +100,7 @@ namespace SwarmNLP
             // MinBox
             // 
             this.MinBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
- 
+            this.MinBox.Location = new System.Drawing.Point(56, 159);
+            this.MinBox.Name = "MinBox";
+            this.MinBox.Size = new System.Drawing.Size(65, 20);
+            this.MinBox.TabIndex 
