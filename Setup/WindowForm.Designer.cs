@@ -103,4 +103,9 @@ namespace SwarmNLP
             this.MinBox.Location = new System.Drawing.Point(56, 159);
             this.MinBox.Name = "MinBox";
             this.MinBox.Size = new System.Drawing.Size(65, 20);
-            this.MinBox.TabIndex 
+            this.MinBox.TabIndex = 4;
+            this.MinBox.TextChanged += new System.EventHandler(this.MinBox_TextChanged);
+            // 
+            // MaxBox
+            // 
+            this.MaxBox.Anchor = ((S
