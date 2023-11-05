@@ -109,4 +109,8 @@ namespace SwarmNLP
             // MaxBox
             // 
             this.MaxBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.MaxBox.Location = new System.Drawing.Point(172, 
+            this.MaxBox.Location = new System.Drawing.Point(172, 159);
+            this.MaxBox.Name = "MaxBox";
+            this.MaxBox.Size = new System.Drawing.Size(65, 20);
+            this.MaxBox.TabIndex = 5;
+      
