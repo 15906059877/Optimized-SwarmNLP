@@ -117,4 +117,6 @@ namespace SwarmNLP
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.Location = new System.Drawing.Point(15, 191);
+   
