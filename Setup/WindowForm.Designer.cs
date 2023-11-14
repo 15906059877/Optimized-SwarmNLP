@@ -113,4 +113,8 @@ namespace SwarmNLP
             this.MaxBox.Name = "MaxBox";
             this.MaxBox.Size = new System.Drawing.Size(65, 20);
             this.MaxBox.TabIndex = 5;
-      
+            this.MaxBox.TextChanged += new System.EventHandler(this.MaxBox_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.
