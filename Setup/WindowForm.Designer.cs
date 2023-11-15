@@ -122,4 +122,9 @@ namespace SwarmNLP
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(228, 46);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Config.Scaling Res - Decreases rende
+            this.label3.Text = "Config.Scaling Res - Decreases render time of function for larger windows as well" +
+                " as setups with time constraints, 1 for none";
+            // 
+            // ScaleBox
+            // 
+            this.
