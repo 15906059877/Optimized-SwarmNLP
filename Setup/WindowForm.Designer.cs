@@ -127,4 +127,5 @@ namespace SwarmNLP
             // 
             // ScaleBox
             // 
-            this.
+            this.ScaleBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Scal
