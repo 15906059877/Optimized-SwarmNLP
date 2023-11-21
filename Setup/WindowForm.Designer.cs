@@ -128,4 +128,8 @@ namespace SwarmNLP
             // ScaleBox
             // 
             this.ScaleBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Scal
+            this.ScaleBox.Location = new System.Drawing.Point(18, 240);
+            this.ScaleBox.Name = "ScaleBox";
+            this.ScaleBox.Size = new System.Drawing.Size(65, 20);
+            this.ScaleBox.TabIndex = 7;
+    
