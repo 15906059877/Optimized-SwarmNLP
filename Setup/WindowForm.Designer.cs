@@ -135,4 +135,7 @@ namespace SwarmNLP
             // 
             // SetButton
             // 
-            this.SetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
+            this.SetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.SetButton.Location = new System.Drawing.Point(162, 256);
+            this.SetButton.Name = "SetButton";
+            this.SetButton.Size = new System.Drawing.Size(75, 2
