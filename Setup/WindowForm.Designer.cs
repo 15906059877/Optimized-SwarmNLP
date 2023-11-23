@@ -142,4 +142,9 @@ namespace SwarmNLP
             this.SetButton.TabIndex = 8;
             this.SetButton.Text = "Set";
             this.SetButton.UseVisualStyleBackColor = true;
-            this.SetButton.C
+            this.SetButton.Click += new System.EventHandler(this.SetButton_Click);
+            // 
+            // WindowForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+ 
