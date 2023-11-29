@@ -152,4 +152,9 @@ namespace SwarmNLP
             this.ClientSize = new System.Drawing.Size(249, 291);
             this.Controls.Add(this.SetButton);
             this.Controls.Add(this.ScaleBox);
-            this.Controls.Add(this.
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.MaxBox);
+            this.Controls.Add(this.MinBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+  
