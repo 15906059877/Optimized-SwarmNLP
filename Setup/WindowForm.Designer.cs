@@ -160,4 +160,8 @@ namespace SwarmNLP
             this.Controls.Add(this.RangeList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.M
+            this.MinimizeBox = false;
+            this.Name = "WindowForm";
+            this.Text = "Window";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Window_FormClosing);
+       
