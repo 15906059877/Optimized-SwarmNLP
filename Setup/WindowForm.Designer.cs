@@ -172,4 +172,7 @@ namespace SwarmNLP
 
         #endregion
 
-        private System.Win
+        private System.Windows.Forms.ListView RangeList;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.Colu
