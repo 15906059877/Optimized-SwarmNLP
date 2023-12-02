@@ -164,4 +164,12 @@ namespace SwarmNLP
             this.Name = "WindowForm";
             this.Text = "Window";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Window_FormClosing);
-       
+            this.Load += new System.EventHandler(this.WindowForm_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Win
