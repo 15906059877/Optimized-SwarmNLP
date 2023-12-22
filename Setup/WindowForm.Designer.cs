@@ -179,4 +179,9 @@ namespace SwarmNLP
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox MinBox;
-        private System.Windows.Forms.TextBox Ma
+        private System.Windows.Forms.TextBox MaxBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox ScaleBox;
+        private System.Windows.Forms.Button SetButton;
+    }
+}
