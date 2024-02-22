@@ -173,3 +173,63 @@ namespace SwarmNLP
             IntPtr hdc,          // handle to device context
             int X,            // x-coordinate of new current position
             int Y,            // y-coordinate of new current position
+            int oldp// pointer to old current position
+            );
+
+
+        static public uint MAKERGB(int r, int g, int b)
+        {
+            return ((uint)(b & 255)) | ((uint)((r & 255) << 8)) | ((uint)((g & 255) << 16));
+        }
+
+        [DllImport("gdi32.dll", ExactSpelling = true, SetLastError = true)]
+         public static  extern int StretchDIBits(
+              IntPtr hdc,                      // handle to DC
+              int XDest,                    // x-coord of destination upper-left corner
+              int YDest,                    // y-coord of destination upper-left corner
+              int nDestWidth,               // width of destination rectangle
+              int nDestHeight,              // height of destination rectangle
+              int XSrc,                     // x-coord of source upper-left corner
+              int YSrc,                     // y-coord of source upper-left corner
+              int nSrcWidth,                // width of source rectangle
+              int nSrcHeight,               // height of source rectangle
+              IntPtr lpBits,           // bitmap bits CONST VOID *lpBits
+              ref BITMAPINFO lpBitsInfo, // bitmap data  CONST BITMAPINFO *lpBitsInfo
+              uint iUsage,                  // usage options
+              uint dwRop                   // raster operation code
+            );
+
+        [DllImport("gdi32.dll")]
+        public static extern bool StretchBlt(IntPtr hdcDest, int nXOriginDest, int nYOriginDest,
+            int nWidthDest, int nHeightDest,
+            IntPtr hdcSrc, int nXOriginSrc, int nYOriginSrc, int nWidthSrc, int nHeightSrc,
+            Int32 dwRop);
+        [DllImport("gdi32.dll")]
+        public static extern int SetStretchBltMode(
+          IntPtr hdc,           // handle to DC
+          int iStretchMode   // bitmap stretching mode
+        );
+
+        [DllImport("gdi32.dll")]
+        public static extern bool Arc(
+          IntPtr hdc,         // handle to device context
+          int nLeftRect,   // x-coord of rectangle's upper-left corner
+          int nTopRect,    // y-coord of rectangle's upper-left corner
+          int nRightRect,  // x-coord of rectangle's lower-right corner
+          int nBottomRect, // y-coord of rectangle's lower-right corner
+          int nXStartArc,  // x-coord of first radial ending point
+          int nYStartArc,  // y-coord of first radial ending point
+          int nXEndArc,    // x-coord of second radial ending point
+          int nYEndArc     // y-coord of second radial ending point
+        );
+
+        [DllImport("gdi32.dll")]
+        public static extern bool Ellipse(
+          IntPtr hdc,        // handle to DC
+          int nLeftRect,  // x-coord of upper-left corner of rectangle
+          int nTopRect,   // y-coord of upper-left corner of rectangle
+          int nRightRect, // x-coord of lower-right corner of rectangle
+          int nBottomRect // y-coord of lower-right corner of rectangle
+        );
+    }
+}
