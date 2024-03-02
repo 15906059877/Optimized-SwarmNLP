@@ -3,4 +3,13 @@ if function uses time, then values cant be cached
 
 use cursor as another point particles gravitate towards to give user input into optimization
 
-click on swarm to
+click on swarm to jolt particles / put more energy into the system
+
+pan/zoom support
+
+equality / integer constraints
+
+out of memory / bitmap problems?
+
+Notes
+	Win32 is used for drawing a
