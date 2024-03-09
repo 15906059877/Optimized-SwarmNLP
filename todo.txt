@@ -15,4 +15,8 @@ Notes
 	Win32 is used for drawing as opposed to GdiPlus because win32 is hardware accelerated
 
 	Evaluator - from codeproject, lets me compile code on the fly
-		user can import custom equations and have them compiled into nati
+		user can import custom equations and have them compiled into native code
+		
+	FastInvoke - Some how hacks reflection so that I can dynamically invoke those
+		compiled functions really quickly, as opposed to before when it was much slower..
+		
