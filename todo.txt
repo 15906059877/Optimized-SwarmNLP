@@ -12,4 +12,7 @@ equality / integer constraints
 out of memory / bitmap problems?
 
 Notes
-	Win32 is used for drawing a
+	Win32 is used for drawing as opposed to GdiPlus because win32 is hardware accelerated
+
+	Evaluator - from codeproject, lets me compile code on the fly
+		user can import custom equations and have them compiled into nati
